@@ -1,0 +1,3 @@
+ErrorDocument 404 /SMS/404.php
+
+ErrorDocument 505 /SMS/505.php
