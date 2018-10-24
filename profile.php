@@ -8,13 +8,13 @@ include('includes/header.php'); ?>
     include_once('classes/users.php');
     include_once('classes/login.php');
     $id = $_SESSION['user_id'];
+    //echo $id;
     $log= new login();
     $user= new users();
     $logged=$log->checklogin();
     if(!$logged)
         header("Location: login.php");
     $row=$user->getRowByID($id);
-
 
     ?>
 <h1 style='text-align:center; color:#0580BC; font-size:80px;'> Profile</h1><br/>
