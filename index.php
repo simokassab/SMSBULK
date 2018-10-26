@@ -5,6 +5,10 @@ include_once('classes/login.php');
 $log= new login();
 $res=$log->checklogin();
 
+
+
+
+
 if(!$res)
     header("Location: login.php");
 ?>

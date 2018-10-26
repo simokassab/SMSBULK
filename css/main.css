@@ -154,6 +154,8 @@ html {
     width: 200px;
 	cursor:pointer;
 }
+
+
 .inputFile {
     padding: 5px 0px;
 	margin-top:8px;	
@@ -174,7 +176,7 @@ html {
 }
 .upload-preview {border-radius:4px;}
 #body-overlay {background-color: rgba(0, 0, 0, 0.6);z-index: 999;position: absolute;left: 0;top: 0;width: 100%;height: 100%;display: none;}
-#body-overlay div {position:absolute;left:50%;top:50%;margin-top:-32px;margin-left:-32px;}
+#body-overlay div {position:absolute;left:50%;top:50%;margin-top:-32px;margin-left:-32px;}  
 
 #tabs{
 
@@ -201,6 +203,15 @@ html {
   border-right: 2px solid #0580BC;
   border-left: 2px solid #0580BC;
   border-bottom:0px solid white !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.cont {
+  margin-left:2% !important;
+  margin-right:2% !important;
 }
 
 .modal-dialog {
@@ -293,48 +304,6 @@ html {
 }
 
 
-
-input[type="checkbox"] { display: none; }
-
-input[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  color: rgb(121, 121, 121);
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-input[type="checkbox"] + label:last-child { margin-bottom: 0; }
-
-input[type="checkbox"] + label:before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgb(121, 121, 121);
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: .6;
-  -webkit-transition: all .12s, border-color .08s;
-  transition: all .12s, border-color .08s;
-}
-
-input[type="checkbox"]:checked + label:before {
-  width: 10px;
-  top: -5px;
-  left: 5px;
-  border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 
 .forget {
   color: rgb(121, 121, 121);

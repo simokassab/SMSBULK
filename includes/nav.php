@@ -86,45 +86,6 @@
             });
             $("[rel='tooltip']").tooltip();
 
-            $(document).on('click','.create-modal', function() {
-                $('#create').modal('show');
-                $('.form-horizontal').show();
-                $('.modal-title').text('Add Group');
-            });
-            $(".add_group").click(function() {
-                $.ajax({
-                type: 'POST',
-                url: 'addGroup',
-                data: {
-                    '_token': $('input[name=_token]').val(),
-                    'name': $('input[name=name_]').val(),
-                    'description': $('input[name=description]').val()
-                },
-                success: function(data){
-                    if ((data.errors)) {
-                    $('.error').removeClass('hidden');
-                    $('.error').text(data.errors.name);
-                    $('.error').text(data.errors.description);
-                    } else {
-                    $('.error').remove();
-                    $('#table').append("<tr class='group" + data.id + "'>"+
-                    "<td >" + data.name + "</td>"+
-                    "<td>" + data.description + "</td>"+
-                    "<td>" + data.created_at + "</td>"+
-                    "<td>" + data.active + "</td>"+
-                    "<td class='text-center'><button class='edit-modal btn btn-warning btn-sm' data-id='" + data.id + 
-                    "' data-title='" + data.name + "' data-body='" + data.description + 
-                    "'><span class='glyphicon glyphicon-pencil'></span></button> <button class='delete-modal btn btn-danger btn-sm' data-id='" + data.id + 
-                    "' data-title='" + data.name + "' data-body='" + data.description + "'><span class='glyphicon glyphicon-trash'></span></button>"+
-                    "<a href='#' title='View Contacts' class='btn btn-primary btn-sm'><i class='glyphicon glyphicon-tag' ></i> </td></tr>");
-                    }
-                },
-                });
-                $('#name').val('');
-                $('#description').val('');
-                //$('#create').hide();
-            });
-
             // function Edit POST
             $(document).on('click', '.edit-modal', function() {
             $('#footer_action_button').text(" Update Post");
@@ -141,34 +102,23 @@
             $('#b').val($(this).data('body'));
             $('#myModal').modal('show');
             });
-
             $('.modal-footer').on('click', '.edit', function() {
             $.ajax({
-                type: 'POST',
-                url: 'editGroup',
-                data: {
-            '_token': $('input[name=_token]').val(),
-            'id': $("#fid").val(),
-            'name': $('#t').val(),
-            'description': $('#b').val()
-                },
+                type: 'GET',
+                url: './requests/groups/updategroup.php',
+                data: 'id='+$("#fid").val()+'&name='+ $('#t').val()+'&description='+ $('#b').val(),
             success: function(data) {
-                $('.group' + data.id).replaceWith(" "+
-                "<tr class='group" + data.id + "'>"+
-                "<td>" + data.name + "</td>"+
-                "<td>" + data.description + "</td>"+
-                "<td>" + data.created_at + "</td>"+
-                "<td>" + data.active + "</td>"+
-            "<td class='text-center'><button class='show-modal btn btn-info btn-sm'  data-id='" + data.id + "' data-title='" + data.name + 
-            "' data-body='" + data.description + "'><i class='fa fa-eye'></i></button>&nbsp;<button class='edit-modal btn btn-warning btn-sm' data-id='" + data.id + "' data-title='" + data.name + 
-            "' data-body='" + data.description + "'><span class='glyphicon glyphicon-pencil'></span></button> <button class='delete-modal btn btn-danger btn-sm' data-id='" + 
-            data.id + "' data-title='" + data.name + "' data-body='" + data.description + "'><span class='glyphicon glyphicon-trash'></span></button>"+
-            "<a href='#' title='View Contacts' class='btn btn-primary btn-sm'><i class='glyphicon glyphicon-tag' ></i> </td></tr>");
+                $.notify("Group has been updated", "info");
+                window.setTimeout(function () {
+                location.reload();
+                location.href = "http://localhost/SMS/groups.php#view";
+                }, 1000); 
                 }
             });
             });
 
             $(document).on('click', '.delete-modal', function() {
+            
             $('#footer_action_button').text(" Delete");
             $('#footer_action_button').removeClass('glyphicon-check');
             $('#footer_action_button').addClass('glyphicon-trash');
@@ -182,19 +132,21 @@
             $('.title').html($(this).data('title'));
             $('#myModal').modal('show');
             });
-
+           // 
             $('.modal-footer').on('click', '.delete', function(){
-            $.ajax({
-                type: 'POST',
-                url: 'deleteGroup',
-                data: {
-                '_token': $('input[name=_token]').val(),
-                'id': $('.id').text()
-                },
-                success: function(data){
-                $('.group' + $('.id').text()).remove();
-                }
-            });
+             //   alert($('.id').text());
+                $.ajax({
+                    type: 'GET',
+                    url: './requests/groups/deletegroup.php',
+                    data: 'id=' +$('.id').text(),
+                    success: function(data){
+                        $.notify("Group has been deleted", "error");
+                         window.setTimeout(function () {
+                        location.reload();
+                        location.href = "http://localhost/SMS/groups.php#view";
+                        }, 1000); 
+                        }
+                });
             });
 
             // Show function

@@ -107,7 +107,6 @@ $(document).ready(function (e) {
             </div>
         </div>           
 </div>
-
     <div id="myModal"class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -177,28 +176,93 @@ $(document).ready(function (e) {
             <div class="tab-content" id='content1'>
                 <div class="tab-pane  active" id="new" name="new" role="tabpanel"><br/>  
                 <form method='post' action='groups.php'>
-                    <h3 style='text-align:center;'>Add Group</h3><hr/>
+                    <h3 style='text-align:center;'>Add Contact</h3><hr/>
                    <div class='row' style='margin:0 2% 2% 2%;'>
-                        <div class='col-sm-6'>
+                        <div class='col-sm-3'>
                             <div class="form-group">
-                              <label class="control-label" for="title">Name :</label>
-                                <input type="text" class="form-control name_" id="name_" name="name_"
-                                placeholder="name" >
-                                <p id='errorname' class="error text-center alert alert-danger" style='display:none;'></p>
+                              <label class="control-label" for="fname">First Name :</label>
+                                <input type="text" class="form-control fname" id="fname" name="fname"
+                                placeholder="First Name" >
                             </div>
                         </div>
-                        <div class='col-sm-6'>
+                        <div class='col-sm-3'>
                             <div class="form-group">
-                              <label class="control-label" for="body">description :</label>
-                                <input type="text" class="form-control" id="description_" name="description_"
-                                placeholder="Description" >
-                                <p id='errordesc' class="error text-center alert alert-danger" style='display:none;'></p>
+                              <label class="control-label" for="lname">Last Name:</label>
+                                <input type="text" class="form-control" id="lname" name="lname"
+                                placeholder="Last Name" >
                             </div>
+                        </div>
+                        <div class='col-sm-3'>
+                            <div class="form-group">
+                              <label class="control-label" for="msisdn">Phone Number*:</label>
+                                <input type="text" class="form-control" id="msisdn" name="msisdn"
+                                placeholder="Phone Number" >
+                            </div>
+                        </div>
+                        <div class='col-sm-3'>
+                        <div class="form-group">
+                                <div data-toggle="buttons" style='margin-top:7%;'>Gender:
+                                <label class="btn btn-primary btn-circle btn-lg" title='Male'> <input type="radio" name="gender" value="male"><i class="fa fa-male" ></i></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="btn btn-danger  btn-circle btn-lg" title='Female'><input type="radio" name="gender" value="female"><i class="fa fa-female"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='row' style='margin:0 2% 2% 2%;'>
+                        <div class='col-sm-4'>
+                            <div class="form-group">
+                              <label class="control-label" for="email">Email:</label>
+                                <input type="email" class="form-control fname" id="email" name="email"
+                                placeholder="Email" >
+                            </div>
+                        </div>
+                        <div class='col-sm-4'>
+                            <div class="form-group">
+                              <label class="control-label" for="address">Address:</label>
+                                <input type="text" class="form-control" id="address" name="address"
+                                placeholder="Address" >
+                            </div>
+                        </div>
+                        <div class='col-sm-4'>
+                            <div class="form-group">
+                              <label class="control-label" for="groups" style='margin-top:9%;'>Groups*:</label>
+                              <select id="basic" multiple="multiple" style='width:500px;'>
+                                <option value="cheese">Cheese</option>
+                                <option value="tomatoes">Tomatoes</option>
+                                <option value="mozarella">Mozzarella</option>
+                                <option value="mushrooms">Mushrooms</option>
+                                <option value="pepperoni">Pepperoni</option>
+                                <option value="onions">Onions</option>
+                            </select>
+                            </div>
+                            <style>
+                                .multiselect{
+                                    width : 200px;
+                                }
+                            </style>
+                            <script type="text/javascript">
+                            $(function() {
+                                $('#basic').multiselect({
+                                enableFiltering: true,
+                                templates: {
+                                    li: '<li><a href="javascript:void(0);"><label class="pl-2"></label></a></li>',
+                                    filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search" type="text"></div></li>',
+                                    filterClearBtn: ''
+                                },
+                                
+                                onInitialized: function(select, container) {
+                                    // hide checkboxes
+                                   // container.find('input[type=checkbox]').addClass('d-none');
+                                }
+                            });
+                            });
+                            </script>
                         </div>
                     </div>
                     <div style=' margin-left: 40%;'>
                         <a class="btn btn-warning add_group" style='width:300px;' >
-                        <span class="fa fa-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Save Group
+                        <span class="fa fa-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Save Contact
                         </a><br/><br/>
                     </div>
                     </form>
