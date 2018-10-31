@@ -1,10 +1,12 @@
 <?php 
+include_once ('db_connect.php');
 
     class users {
 
         function insert($username, $email, $password, $address, $phone, $company, $photo){
+            $mysqli = getConnected();
             $query = "INSERT INTO `users` (`id`, `username`, `email`, `password`, `address`, `phone`, `company`, `photo`, `active`, `created_at`) 
-            VALUES (NULL, '$username', '$email', '$password', '$address', '$phone', '$company', '$photo', '1', 'NOW()');";
+            VALUES (NULL, '$username', '$email', '$password', '$address', '$phone', '$company', '$photo', '1', NOW());";
             //echo $query;
             $mysqli->query($query);
             return $mysqli->insert_id;
@@ -41,10 +43,9 @@
             $mysqli = getConnected();
             //echo $mysqli;
             $query = "SELECT * FROM users WHERE id = ".$id." and active=1";
-           // echo $query;
+            //echo $query;
             $result = mysqli_query($mysqli, $query);
             $row   = mysqli_fetch_assoc($result);
-            //print_r($row);
             return $row;
         }
 
@@ -55,6 +56,41 @@
             } else {
                 return "Error updating record: " . mysqli_error($conn);
             }
+        }
+
+        function checkuser($email){
+            $mysqli = getConnected();
+            $stmt = $mysqli->prepare('SELECT id, password FROM users WHERE email = ?');
+            // Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
+            $stmt->bind_param('s', $email);
+            $stmt->execute(); 
+            $stmt->store_result(); 
+            if ($stmt->num_rows > 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function  createContactTable($user_id){
+            $mysqli=getConnected();
+            $sql="CREATE TABLE `contacts_".$user_id."` (
+                `id` int(10) NOT NULL AUTO_INCREMENT, `firstname` varchar(191) DEFAULT NULL,
+                `lastname` varchar(191)  DEFAULT NULL,
+                `email` varchar(191)  DEFAULT NULL,
+                `gender` varchar(191)  DEFAULT NULL,
+                `address` varchar(191) DEFAULT NULL,
+                `MSISDN` int(11) NOT NULL,
+                `GRS_ID_FK` varchar(191) NOT NULL,
+                `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                `active` int(11) NOT NULL, PRIMARY KEY (`id`))
+                ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_unicode_ci;";
+                if (mysqli_query($mysqli, $sql)) {
+                    return true;
+                } else {
+                    return "Error creating table: " . mysqli_error($conn);
+                }
         }
         
     }

@@ -1,6 +1,11 @@
 <?php
-include_once './config/db_connect.php';
- 
+include_once './classes/DB.php';
+//$mysqli=getConnected();
+
+$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
+    $mysqli->set_charset('utf8');
+    if($mysqli->connect_error) 
+      die('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
 $error_msg = "";
  
 if (isset($_POST['name'], $_POST['email'], $_POST['p'])) {

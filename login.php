@@ -1,11 +1,23 @@
-<?php include('includes/header.php'); ?>
+<?php 
+ob_start();
+session_start();
+include_once('classes/login.php');
+$log= new login();
+$res=$log->checklogin();
+
+if($res)
+    header("Location: index.php");
+
+include('includes/header.php');
+
+?>
 <div class='container-fluid'>
 
     <div class='row'>
-        <div class='col-xs-6'>
+        <div class='col-sm-6 back' style=''>
             <img src='img/bg1.png' class="resp" >
         </div>
-        <div class='col-xs-6'>
+        <div class='col-sm-6'>
             <div class='login'>
             <h2 style='text-align:center; margin-left:5%; color:#595959;'>Welcome back! Please login to your account. </h2>
             <?php
@@ -50,3 +62,4 @@
         </div>
     </div>
 </div>
+<?php include('includes/footer.php'); ?>

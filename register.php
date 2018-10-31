@@ -1,60 +1,50 @@
-<?php
-include_once './includes/register.inc.php';
-include_once 'classes/login.php';
-
-$log = new login();
-?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Secure Login: Registration Form</title>
-        <script type="text/JavaScript" src="./js/sha512.js"></script> 
-        <script type="text/JavaScript" src="./js/forms.js"></script>
-    </head>
-    <body>
-        <!-- Registration form to be output if the POST variables are not
-        set or if the registration script caused an error. -->
-        <h1>Register with us</h1>
-        <?php
-        if (!empty($error_msg)) {
-            echo $error_msg;
-        }
-        ?>
-        <ul>
-            <li>Usernames may contain only digits, upper and lowercase letters and underscores</li>
-            <li>Emails must have a valid email format</li>
-            <li>Passwords must be at least 6 characters long</li>
-            <li>Passwords must contain
-                <ul>
-                    <li>At least one uppercase letter (A..Z)</li>
-                    <li>At least one lowercase letter (a..z)</li>
-                    <li>At least one number (0..9)</li>
-                </ul>
-            </li>
-            <li>Your password and confirmation must match exactly</li>
-        </ul>
-        <form action="<?php echo $log->esc_url($_SERVER['REQUEST_URI']); ?>" 
-                method="post" 
-                name="registration_form">
-            Name: <input type='text' 
-                name='name' 
-                id='name' /><br>
-            Email: <input type="text" name="email" id="email" /><br>
-            Password: <input type="password"
-                             name="password" 
-                             id="password"/><br>
-            Confirm password: <input type="password" 
-                                     name="confirmpwd" 
-                                     id="confirmpwd" /><br>
-            <input type="button" 
-                   value="Register" 
-                   onclick="return regformhash(this.form,
-                                   this.form.name,
-                                   this.form.email,
-                                   this.form.password,
-                                   this.form.confirmpwd);" /> 
-        </form>
-        <p>Return to the <a href="index.php">login page</a>.</p>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<style>
+		.register-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.register-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.register-form input[type="email"],
+		.register-form input[type="password"],
+		.register-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.register-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="register-form">
+			<h1>Register Form</h1>
+			<form action="./requests/register.php" method="post">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="email" name="email" placeholder="Email" required>
+				<input type="submit">
+			</form>
+		</div>
+	</body>
 </html>

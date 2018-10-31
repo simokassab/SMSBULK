@@ -4,21 +4,22 @@ session_start();
 include('includes/header.php'); ?>
 <body>
 <?php 
+    $id = $_SESSION['user_id'];
+    echo $id;
     include('includes/nav.php'); 
     include_once('classes/users.php');
     include_once('classes/login.php');
-    $id = $_SESSION['user_id'];
-    //echo $id;
+    
     $log= new login();
     $user= new users();
     $logged=$log->checklogin();
     if(!$logged)
         header("Location: login.php");
     $row=$user->getRowByID($id);
-
+   // print_r($row);
     ?>
-<h1 style='text-align:center; color:#0580BC; font-size:80px;'> Profile</h1><br/>
-<div class="container">
+<h1 class='title'> Profile</h1>
+<div class="container-fluid">
   	<hr>
 	<div class="row">
       <!-- left column -->
@@ -35,7 +36,7 @@ include('includes/header.php'); ?>
                             </div>
                         </div>
                         <div>
-                        <input type="submit" value="Upload Photo" class="btnSubmit" />
+                        <input type="submit" value="Upload Photo" class="btn btn-info btnSubmit btn-sm" />
                     </form>
             </div>
         </div>
@@ -86,7 +87,7 @@ function showPreview(objFileInput) {
         var fileReader = new FileReader();
         fileReader.onload = function (e) {
             
-           $("#targetLayer").html('<img src="'+e.target.result+'" width="200px" height="200px" class="image--profile" />');
+           $("#targetLayer").html('<img src="'+e.target.result+'"  class="image--profile" />');
 			$("#targetLayer").css('opacity','0.7');
 			$(".icon-choose-image").css('opacity','0.5');
         }
@@ -95,7 +96,7 @@ function showPreview(objFileInput) {
 }
 
 $(document).ready(function (e) {
-    $("#targetLayer").html(' <img class="image--profile" src="<?php echo $row['photo']; ?>" width="200px" height="200px"  />');
+    $("#targetLayer").html(' <img class="image--profile" src="<?php echo $row['photo']; ?>"   />');
 	$("#uploadForm").on('submit',(function(e) {
 		e.preventDefault();
 		$.ajax({

@@ -1,6 +1,7 @@
 <?php
 ob_start();
 session_start();
+header('Content-type:text/html; charset=utf-8');
 include_once('classes/login.php');
 include_once('classes/groups.php');
 $log= new login();
@@ -17,6 +18,7 @@ if(!$res)
 <script>
 $(document).ready(function (e) {
     $('#table').DataTable( {
+        responsive: true,
         "pagingType": "full_numbers"
     } );
     var res = $(location).attr('href').split("#");
@@ -107,7 +109,6 @@ $(document).ready(function (e) {
             </div>
         </div>           
 </div>
-
     <div id="myModal"class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -137,7 +138,7 @@ $(document).ready(function (e) {
                 </div>
                 </form>
                         <!-- Form Delete Post -->
-                <div class="deleteContent">
+            <div class="deleteContent">
                 Are You sure want to delete <span class="title"></span>?
                 <span class="hidden id"></span>
                 </div>
@@ -157,25 +158,26 @@ $(document).ready(function (e) {
 
 <!-- end modal -->
 <?php include('includes/nav.php');?>
-<h1 style='text-align:center; color:#0580BC; font-size:80px;'> Groups</h1><br/>
+<h1 class='title'> Groups</h1>
     <!-- Begin page content -->
-    <div class="container-fluid ">
+    <div class="container-fluid "style='padding:3% !important;'>
         <div id="navbar-example">
         <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" id='navitm'  >
+                    <a class="nav-link active view" data-toggle="tab" href="#vieww" role="tab">View/ Edit Group</a>
+                </li>
                 <li class="nav-item" id='navitm' >
-                    <a class="nav-link active new" data-toggle="tab" href="#new" role="tab">New Group</a>
+                    <a class="nav-link  new" data-toggle="tab" href="#new" role="tab">New Group</a>
                 </li>
-                <li class="nav-item" id='navitm'  >
-                    <a class="nav-link view" data-toggle="tab" href="#vieww" role="tab">View/ Edit Group</a>
-                </li>
+                
                 <li class="nav-item"  id='navitm' >
                     <a class="nav-link upload" data-toggle="tab" href="#up" role="tab">Upload Group</a>
                 </li>
             </ul>
             <!-- Tab panes {Fade}  -->
             <div class="tab-content" id='content1'>
-                <div class="tab-pane  active" id="new" name="new" role="tabpanel"><br/>  
+                <div class="tab-pane  " id="new" name="new" role="tabpanel"><br/>  
                 <form method='post' action='groups.php'>
                     <h3 style='text-align:center;'>Add Group</h3><hr/>
                    <div class='row' style='margin:0 2% 2% 2%;'>
@@ -197,13 +199,13 @@ $(document).ready(function (e) {
                         </div>
                     </div>
                     <div style=' margin-left: 40%;'>
-                        <a class="btn btn-warning add_group" style='width:300px;' >
+                        <a class="btn btn-warning add_group" >
                         <span class="fa fa-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Save Group
                         </a><br/><br/>
                     </div>
                     </form>
                 </div>
-                <div class="tab-pane" id="vieww" name='vieww' role="tabpanel">
+                <div class="tab-pane active" id="vieww" name='vieww' role="tabpanel">
                 <br/> 
                 <div class='cont' >
                     <table  id='table' class="table  table-bordered hover" style="width:100%">
@@ -211,9 +213,8 @@ $(document).ready(function (e) {
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th>Created Date</th>
                                 <th class="text-center">
-                                    <a href='#' class='create-modal btn btn-success btn-sm'> <i class="fa fa-plus-square" style='color:white;'></i></a>
+                                   
                                 </th>
                             </tr>
                         </thead>
@@ -224,7 +225,6 @@ $(document).ready(function (e) {
                         <tr class='group<?php echo $gg['id']; ?>'>
                             <td><?php echo $gg['name'];?></td>
                             <td><?php echo $gg['description'];?></td>
-                            <td><?php echo $gg['created_at'];?></td>
                             <td class="text-center">
                                 <a href="#" title='View Group' data-toggle="modal" data-target="#show" class="show-modal btn btn-info btn-sm" 
                                 data-id="<?php echo $gg['id']; ?>" data-title="<?php echo $gg['name']; ?>" data-body="<?php echo $gg['description']; ?>">
@@ -250,8 +250,221 @@ $(document).ready(function (e) {
                         </div>
                 </div>
                 <div class="tab-pane fade" id="up" name="up" role="tabpanel">
-                </div>
+                <form id='formupload' method = "POST" enctype = "multipart/form-data"><br/><br/>
+                <h4 style='text-align:center;'>Create Group and Upload Contacts</h4>
+                    <div id="smartwizard" style='margin:0 2% 2% 2%;'>
+                        <ul>
+                            <li><a href="#step-1">Step 1<br /><small>Create Group</small></a></li>
+                            <li><a href="#step-2">Step 2<br /><small>Upload Excel File</small></a></li>
+                        </ul>
+                        <div>
+                            <div id="step-1"><br/>
+                                <h2>Group Name: </h2><br/>
+                                <div id="form-step-0" role="form" data-toggle="validator" >
+                                    <div class="form-group">
+                                        <input type="name" class="form-control" id="grpname" name='grpname' required>
+                                    </div><br/>
+                                </div>
+                            </div>
+                            <div id="step-2"><br/> 
+                                <h2>Upload your File (Excel File)</h2><br/>
+                                <div id="form-step-1" role="form" data-toggle="validator">
+                                     <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file"  id="excel" name='excel' 
+                                        accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+                                        onchange="ValidateSingleInput(this)">
+                                    </div>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                   </form>
+                    <div id='result' style='margin:3%;'></div>            
+                </div><!-- last tab --> 
             </div>
         </div>
     <div>
-<?php include('includes/footer.php'); ?>
+<script type="text/javascript">
+var _validFileExtensions = [".xls", ".xlsx"];    
+    function ValidateSingleInput(oInput) {
+        if (oInput.type == "file") {
+            var sFileName = oInput.value;
+            if (sFileName.length > 0) {
+                var blnValid = false;
+                for (var j = 0; j < _validFileExtensions.length; j++) {
+                    var sCurExtension = _validFileExtensions[j];
+                    if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                        blnValid = true;
+                        break;
+                    }
+                }
+                if (!blnValid) {
+                    alert("Sorry, " + sFileName + " is invalid, allowed extensions are: " + _validFileExtensions.join(", "));
+                    oInput.value = "";
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+$( document ).ready(function() {
+    $('#smartwizard').smartWizard("reset");
+    $('#excel').change(function(){
+        $('#formupload').submit();
+    });
+    $('#formupload').on('submit', function(event){
+        event.preventDefault();
+        $.ajax({
+            url: 'requests/groups/upload.php',
+            method: 'POST',
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function(data){
+                $('#result').html("<center><h3>Loading...</h3></center>");
+                $.notify("Uploading..", "info");
+                window.setTimeout(function () {
+                        //location.reload();
+                        $('#result').html(data);
+                        }, 2000);
+            }
+        })
+    });
+    $('#excel').filestyle({
+        buttonName : 'btn-info',
+        buttonText : 'Select Your Excel'
+    });
+});
+var btnFinish = $('<button></button>').text('Upload')
+                    .addClass('btn btn-info')
+                    .on('click', function(){
+                        if( $('#up_grp').val()==""){
+                            alert("Still have an error");
+                        }
+                        else if($('.bootstrap-filestyle > input').val()==""){
+                            alert("Still have an error.. select a file");
+                        }
+                    });
+            var btnCancel = $('<button></button>').text('Cancel')
+                            .addClass('btn btn-danger')
+                            .on('click', function(){
+                                $('#smartwizard').smartWizard("reset");
+                                $('#up_grp').val("");
+                                $('#grpname').val("");
+                            });
+
+            $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'arrows',
+                    transitionEffect:'fade',
+                    toolbarSettings: {toolbarPosition: 'bottom',
+                                      toolbarExtraButtons: [btnCancel]
+                                    },
+                    anchorSettings: {
+                                markDoneStep: true, // add done css
+                                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                            }
+                 });
+
+            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+                var elmForm = $("#form-step-" + stepNumber);
+                // stepDirection === 'forward' :- this condition allows to do the form validation
+                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                if(stepDirection === 'forward' && elmForm){
+                    elmForm.validator('validate');
+                    var elmErr = elmForm.children('.has-error');
+                    if(elmErr && elmErr.length > 0){
+                        // Form validation failed
+                        return false;
+                    }
+                }
+                return true;
+            });
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                if(stepNumber == 3){
+                    $('.btn-finish').removeClass('disabled');
+                }else{
+                    $('.btn-finish').addClass('disabled');
+                }
+            });
+
+        $(document).ready(function () {
+            // function Edit POST
+            $(document).on('click', '.edit-modal', function() {
+            $('#footer_action_button').text(" Update Post");
+            $('#footer_action_button').addClass('glyphicon-check');
+            $('#footer_action_button').removeClass('glyphicon-trash');
+            $('.actionBtn').addClass('btn-success');
+            $('.actionBtn').removeClass('btn-danger');
+            $('.actionBtn').addClass('edit');
+            $('.modal-title').text('Post Edit');
+            $('.deleteContent').hide();
+            $('.form-horizontal').show();
+            $('#fid').val($(this).data('id'));
+            $('#t').val($(this).data('title'));
+            $('#b').val($(this).data('body'));
+            $('#myModal').modal('show');
+            });
+            $('.modal-footer').on('click', '.edit', function() {
+            $.ajax({
+                type: 'GET',
+                url: './requests/groups/updategroup.php',
+                data: 'id='+$("#fid").val()+'&name='+ $('#t').val()+'&description='+ $('#b').val(),
+            success: function(data) {
+                $.notify("Group has been updated", "info");
+                window.setTimeout(function () {
+                location.reload();
+                location.href = "./groups.php#view";
+                }, 1000); 
+                }
+            });
+            });
+
+            $(document).on('click', '.delete-modal', function() {
+            
+            $('#footer_action_button').text(" Delete");
+            $('#footer_action_button').removeClass('glyphicon-check');
+            $('#footer_action_button').addClass('glyphicon-trash');
+            $('.actionBtn').removeClass('btn-success');
+            $('.actionBtn').addClass('btn-danger');
+            $('.actionBtn').addClass('delete');
+            $('.modal-title').text('Delete Post');
+            $('.id').text($(this).data('id'));
+            $('.deleteContent').show();
+            $('.form-horizontal').hide();
+            $('.title').html($(this).data('title'));
+            $('#myModal').modal('show');
+            });
+           // 
+            $('.modal-footer').on('click', '.delete', function(){
+             //   alert($('.id').text());
+                $.ajax({
+                    type: 'GET',
+                    url: './requests/groups/deletegroup.php',
+                    data: 'id=' +$('.id').text(),
+                    success: function(data){
+                        $.notify("Group has been deleted", "error");
+                        window.setTimeout(function () {
+                            location.reload();
+                            location.href = "./groups.php#view";
+                        }, 1000); 
+                        }
+                });
+            });
+
+            // Show function
+            $(document).on('click', '.show-modal', function() {
+            $('#show').modal('show');
+            $('.modal-title').text('');
+            $('#i').text($(this).data('id'));
+            $('#ti').text($(this).data('title'));
+            $('#by').text($(this).data('body'));
+           
+            });
+        });
+    </script>
+<?php// include('includes/footer.php'); ?>

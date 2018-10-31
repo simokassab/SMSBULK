@@ -15,14 +15,108 @@ html {
     position: absolute;
     bottom: 0;
     left:0;
+    z-index: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
   }
+
+  .foot {
+   
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    left:0;
+    z-index: 0;
+    height: 40px;
+    max-width: 230px;
+    width: 230px;
+    background-color: #A0A0A0;
+  }
+
+  .add_contact {
+    width: 250px !important;
+  }
+
+  .add_group {
+    width: 250px !important;
+  }
   
+  .wrapperr{
+    background: #EEEEEE;
+    width: 30%;
+  }
   
+  .toggle_radio{
+    position: relative;
+    background: #5BC0DE;
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 212px;
+  }
+  .toggle_radio > * {
+    float: left;
+  }
+  .toggle_radio input[type=radio]{
+    display: none;
+    position: fixed/
+  }
+  .toggle_radio label{
+    font: 90%/1.618 "Source Sans Pro";
+    color: rgba(255,255,255,.9);
+    z-index: 0;
+    display: block;
+    width: 100px;
+    height: 20px;
+    margin: 3px 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    /*background: rgba(0,0,0,.1);*/
+    text-align: center;
+    /*margin: 0 2px;*/
+    /*background: blue;*/ /*make it blue*/
+  }
+  .toggle_option_slider{
+    /*display: none;*/
+    /*background: red;*/
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  
+  #first_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 3px;
+  }
+  #second_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 109px;
+  }
+  #third_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 215px;
+  }
   /* Custom page CSS
   -------------------------------------------------- */
   /* Not required for template or sticky footer method. */
@@ -48,7 +142,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-  
+
+.title{
+  text-align:center; 
+  color:#0580BC; 
+  font-size:4vw;
+}
   code {
     font-size: 80%;
   }
@@ -60,6 +159,8 @@ html {
   .changepass {
     color : #0580BC !important;
   }
+
+
 
   #nav,
   #nav ul {
@@ -113,13 +214,14 @@ html {
   }
   
   .image--cover {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin: 0px;
     object-fit: cover;
     object-position: center right;
-  }
+  
+}
 
   .image--profile {
     width: 200px;
@@ -185,7 +287,8 @@ html {
 
 #navbar-example{
   opacity: 100%;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
   align-items: center;  
 }
 
@@ -205,6 +308,7 @@ html {
   border-bottom:0px solid white !important;
 }
 
+
 .hidden {
   display: none !important;
 }
@@ -219,13 +323,29 @@ html {
   z-index: 1100 !important;
 }
 .resp {
-  max-width: 100%;
+  max-width: 100%; 
+  display:block; 
   height: auto;
   }
 
+  .back {
+    
+    background: url('../img/bg1.png') no-repeat center #EFEFEF;
+    background-size:100%;
+  }
+
+
+ 
+  .multiselect {
+      padding: 20%;
+  }
+
+
   @media screen and (min-aspect-ratio: 1/1) {
     .resp {
-      width:100%;
+      max-width: 100%; 
+      display:block; 
+      height: auto;
     }
     .btnlogin {
       margin-bottom: 20px;
@@ -241,7 +361,9 @@ html {
    
    @media screen and (max-aspect-ratio: 1/1) {
     .resp {
-      width:100%;
+      max-width: 100%; 
+      display:block; 
+      height: auto;
     }
     .btnlogin {
       margin-bottom: 20px;

@@ -1,40 +1,39 @@
-<?php 
-?>
 <body class='bg'>
 <div class="wrapper">
         <!-- Sidebar Holder -->
     <nav id="sidebar">
         <div class="sidebar-header"><a href='index.php'>
-            <img src='img/logo@4x.png' style='width:99%;'></a>
+            <img src='img/logo@4x.png' class='img-responsive' style='width:80%;'></a>
         </div>
         <ul class="list-unstyled components">
-            <li class='active'>
-                <a href="groups.php">
+            <li class='hov' id='grp'>
+                <a href="groups.php" >
                 <i class="fas fa-users" style='font-size:30px;' ></i>
                     Groups
                 </a>
-                <li class='hov'>
+            </li>
+                <li class='hov' id='cont'>
                 <a href="contacts.php">
                     <i class="fas fa-user-circle " style='font-size:30px;' ></i>
                     Contacts
                 </a>
             </li>
-            <li class='hov'>
-                <a href="campaigns.php">
+            <li class='hov' id='camp'>
+                <a href="campaigns.php"  >
                     <i class="fas fa-bullhorn " style='font-size:30px;' ></i>
                     Campaigns
                 </a>
             </li>
             <li class='hov'>
-                <a href="reports.php">
+                <a href="reports.php" id='rep' >
                     <i class="fas fa-chart-line " style='font-size:30px;' ></i>
                     Reports
                 </a>
-            </li>
-            </li>
-                
-        </ul>
-        
+            </li>   
+        </ul> 
+        <div class='foot small'>Powered By:
+            <img src='img/homelogo.png' style='width:100px;'></img>
+        </div>
     </nav>
     
     <!-- Page Content Holder -->
@@ -44,7 +43,7 @@
                 <span></span>
             </button>
         <ul id="nav">
-            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='image--cover'><i class="fas fa-chevron-down"></i></a>
+            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover'></a>
                 <ul class='submen'>  
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="changepassword.php"  >Change Password</a></li>
@@ -54,9 +53,31 @@
 
         </ul><br/><br/>
     <hr/>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
+<script>
+$(document).ready(function () {
+        var res = $(location).attr('href');
+
+        if(res.indexOf("groups") >= 0){
+            console.log('groups');
+            $('#grp').addClass('active');
+            $(document).prop('title', 'Groups');
+        }
+        else if (res.indexOf("contact") >= 0) {
+            console.log('contact');
+            $('#cont').addClass('active');
+            $(document).prop('title', 'Contacts');
+        }
+        else if (res.indexOf("campaign") >= 0) {
+            console.log('camp');
+            $('#camp').addClass('active');
+            $(document).prop('title', 'Campaigns');
+        }
+        else if (res.indexOf("report") >= 0) {
+            $('#rep').addClass('active');
+            $(document).prop('title', 'Reports');
+
+        }
+    $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
@@ -85,78 +106,5 @@
                 }, 1500);
             });
             $("[rel='tooltip']").tooltip();
-
-            // function Edit POST
-            $(document).on('click', '.edit-modal', function() {
-            $('#footer_action_button').text(" Update Post");
-            $('#footer_action_button').addClass('glyphicon-check');
-            $('#footer_action_button').removeClass('glyphicon-trash');
-            $('.actionBtn').addClass('btn-success');
-            $('.actionBtn').removeClass('btn-danger');
-            $('.actionBtn').addClass('edit');
-            $('.modal-title').text('Post Edit');
-            $('.deleteContent').hide();
-            $('.form-horizontal').show();
-            $('#fid').val($(this).data('id'));
-            $('#t').val($(this).data('title'));
-            $('#b').val($(this).data('body'));
-            $('#myModal').modal('show');
-            });
-            $('.modal-footer').on('click', '.edit', function() {
-            $.ajax({
-                type: 'GET',
-                url: './requests/groups/updategroup.php',
-                data: 'id='+$("#fid").val()+'&name='+ $('#t').val()+'&description='+ $('#b').val(),
-            success: function(data) {
-                $.notify("Group has been updated", "info");
-                window.setTimeout(function () {
-                location.reload();
-                location.href = "http://localhost/SMS/groups.php#view";
-                }, 1000); 
-                }
-            });
-            });
-
-            $(document).on('click', '.delete-modal', function() {
-            
-            $('#footer_action_button').text(" Delete");
-            $('#footer_action_button').removeClass('glyphicon-check');
-            $('#footer_action_button').addClass('glyphicon-trash');
-            $('.actionBtn').removeClass('btn-success');
-            $('.actionBtn').addClass('btn-danger');
-            $('.actionBtn').addClass('delete');
-            $('.modal-title').text('Delete Post');
-            $('.id').text($(this).data('id'));
-            $('.deleteContent').show();
-            $('.form-horizontal').hide();
-            $('.title').html($(this).data('title'));
-            $('#myModal').modal('show');
-            });
-           // 
-            $('.modal-footer').on('click', '.delete', function(){
-             //   alert($('.id').text());
-                $.ajax({
-                    type: 'GET',
-                    url: './requests/groups/deletegroup.php',
-                    data: 'id=' +$('.id').text(),
-                    success: function(data){
-                        $.notify("Group has been deleted", "error");
-                         window.setTimeout(function () {
-                        location.reload();
-                        location.href = "http://localhost/SMS/groups.php#view";
-                        }, 1000); 
-                        }
-                });
-            });
-
-            // Show function
-            $(document).on('click', '.show-modal', function() {
-            $('#show').modal('show');
-            $('.modal-title').text('');
-            $('#i').text($(this).data('id'));
-            $('#ti').text($(this).data('title'));
-            $('#by').text($(this).data('body'));
-           
-            });
         });
-    </script>
+</script>
