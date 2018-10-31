@@ -160,7 +160,7 @@ $(document).ready(function (e) {
 <?php include('includes/nav.php');?>
 <h1 class='title'> Groups</h1>
     <!-- Begin page content -->
-    <div class="container-fluid "style='padding:3% !important;'>
+    <div class="container-fluid"  >
         <div id="navbar-example">
         <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -176,8 +176,8 @@ $(document).ready(function (e) {
                 </li>
             </ul>
             <!-- Tab panes {Fade}  -->
-            <div class="tab-content" id='content1'>
-                <div class="tab-pane  " id="new" name="new" role="tabpanel"><br/>  
+            <div class="tab-content" id='content1' >
+                <div class="tab-pane  " id="new" name="new" role="tabpanel" style='margin:2%;!important'><br/>  
                 <form method='post' action='groups.php'>
                     <h3 style='text-align:center;'>Add Group</h3><hr/>
                    <div class='row' style='margin:0 2% 2% 2%;'>
@@ -198,7 +198,7 @@ $(document).ready(function (e) {
                             </div>
                         </div>
                     </div>
-                    <div style=' margin-left: 40%;'>
+                    <div style='margin: 0 auto;text-align:center;'>
                         <a class="btn btn-warning add_group" >
                         <span class="fa fa-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Save Group
                         </a><br/><br/>

@@ -42,9 +42,9 @@
                 <i class="fas fa-align-left"></i>
                 <span></span>
             </button>
-        <ul id="nav">
-            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover'></a>
-                <ul class='submen'>  
+            <ul id="nav">
+            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover'><br/>Me&nbsp;<i class="fas fa-sort-down"></i></a>
+                <ul class='submen' id='subb'>  
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="changepassword.php"  >Change Password</a></li>
                 <li><a href="#" id='logout' >Logout</a></li>
@@ -55,6 +55,13 @@
     <hr/>
 <script>
 $(document).ready(function () {
+    $('#nav > li').on('click', function () {
+       // alert('dsda');
+       $('.image--cover').css('border', '3px solid #0580BC');
+        $('#subb').slideToggle( "fast", function(){
+            $('.image--cover').css('border', 'none');
+        });
+     });
         var res = $(location).attr('href');
 
         if(res.indexOf("groups") >= 0){
@@ -81,23 +88,8 @@ $(document).ready(function () {
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
-            $('#nav > li').each(function(){
-                var t = null;
-                var li = $(this);
-                li.hover(function(){
-                    t = setTimeout(function(){
-                        li.find("ul").slideDown(300);
-                        t = null;
-                    }, 300);
-                }, function(){
-                    if (t){
-                        clearTimeout(t);
-                        t = null;
-                    }
-                    else
-                        li.find("ul").slideUp(200);
-                });
-            });
+    
+            
             $('#logout').on('click', function () {
                 event.preventDefault();
                 $.notify("You will be logged out ..", "info");

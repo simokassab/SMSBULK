@@ -74,7 +74,6 @@
 
 #sidebar ul li {
     margin: 0 0 10% 0;
-    height: 50px !important;
 }
 #sidebar ul li a {
     padding: 25px;
@@ -100,7 +99,6 @@
 #sidebar ul li.active  {
     color: #fff !important;
     background: #0580BC;
-    height: 50px !important;
 }
 
 #sidebar ul li.active > a {

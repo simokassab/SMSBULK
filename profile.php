@@ -5,7 +5,7 @@ include('includes/header.php'); ?>
 <body>
 <?php 
     $id = $_SESSION['user_id'];
-    echo $id;
+    //echo $id;
     include('includes/nav.php'); 
     include_once('classes/users.php');
     include_once('classes/login.php');
