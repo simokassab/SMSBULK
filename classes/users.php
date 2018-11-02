@@ -19,10 +19,29 @@ include_once ('db_connect.php');
             $stmt->close();
         }
 
-        function update($id, $username, $email, $password, $address, $phone, $company, $photo){
-            $sql = "UPDATE `users` SET `username` = '$username', `email` = '$email', 
-                `password` = '$password', `address` = '$address', `phone` = '$phone', 
-                `company` = '$company', `photo` = '$photo' WHERE `users`.`id` = ".$id;
+        function update($id, $username, $email, $address, $phone, $company){
+            $mysqli = getConnected();
+            $sql = "UPDATE `users` SET `username` = '$username', `email` = '$email', `address` = '$address', `phone` = '$phone', 
+                `company` = '$company' WHERE `users`.`id` = ".$id;
+            if (mysqli_query($mysqli, $sql)) {
+                return true;
+            } else {
+                return "Error updating record: " . mysqli_error($conn);
+            }
+        }
+
+        function getOldPassword($user){
+            $mysqli = getConnected();
+            $query = "SELECT password FROM users WHERE id = ".$user." and active=1";
+            //echo $query;
+            $result = mysqli_query($mysqli, $query);
+            $row   = mysqli_fetch_assoc($result);
+            return $row['password'];
+        }
+
+        function changepassword($pass, $userid){
+            $mysqli = getConnected();
+            $sql = "UPDATE `users` SET   `password` = '$pass' WHERE `users`.`id` = ".$userid;
             if (mysqli_query($mysqli, $sql)) {
                 return true;
             } else {
@@ -81,7 +100,7 @@ include_once ('db_connect.php');
                 `email` varchar(191)  DEFAULT NULL,
                 `gender` varchar(191)  DEFAULT NULL,
                 `address` varchar(191) DEFAULT NULL,
-                `MSISDN` int(11) NOT NULL,
+                `MSISDN` BIGINT(20) NOT NULL,
                 `GRS_ID_FK` varchar(191) NOT NULL,
                 `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                 `active` int(11) NOT NULL, PRIMARY KEY (`id`))

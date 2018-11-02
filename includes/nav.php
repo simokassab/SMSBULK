@@ -8,25 +8,25 @@
         <ul class="list-unstyled components">
             <li class='hov' id='grp'>
                 <a href="groups.php" >
-                <i class="fas fa-users" style='font-size:30px;' ></i>
+                <i class="fas fa-users"  ></i>
                     Groups
                 </a>
             </li>
                 <li class='hov' id='cont'>
                 <a href="contacts.php">
-                    <i class="fas fa-user-circle " style='font-size:30px;' ></i>
+                    <i class="fas fa-user-circle"  ></i>
                     Contacts
                 </a>
             </li>
             <li class='hov' id='camp'>
                 <a href="campaigns.php"  >
-                    <i class="fas fa-bullhorn " style='font-size:30px;' ></i>
+                    <i class="fas fa-bullhorn "  ></i>
                     Campaigns
                 </a>
             </li>
             <li class='hov'>
                 <a href="reports.php" id='rep' >
-                    <i class="fas fa-chart-line " style='font-size:30px;' ></i>
+                    <i class="fas fa-chart-line "  ></i>
                     Reports
                 </a>
             </li>   
@@ -43,11 +43,15 @@
                 <span></span>
             </button>
             <ul id="nav">
-            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover'><br/>Me&nbsp;<i class="fas fa-sort-down"></i></a>
-                <ul class='submen' id='subb'>  
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="changepassword.php"  >Change Password</a></li>
-                <li><a href="#" id='logout' >Logout</a></li>
+            <li><a href="#"><img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover'>
+            <br/>Me&nbsp;<i class="fas fa-sort-down"></i></a>
+                <ul class='submen' id='subb'> 
+                <li style='text-align:center; margin-top:10%; border:0 !important; '>
+                    <img src='<?php echo $_SESSION['photo'] ?>' class='img-responsive image--cover1'><br/>
+                    <strong><?php echo $_SESSION['username']; ?></strong>
+                </li>   
+                <li><hr><a href="profile.php"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>
+                <li><a href="#" id='logout' ><i class="fa fa-sign-out-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>
                 </ul>
             </li>
 

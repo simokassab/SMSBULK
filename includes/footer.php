@@ -1,5 +1,7 @@
 <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+       <div>Powered By :
+            <img src='img/homelogo.png' style='width:100px;'></img>
+        </div>
       </div>
     </footer>

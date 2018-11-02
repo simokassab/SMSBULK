@@ -13,7 +13,7 @@
 
         function delete($id, $user_id){
             $mysqli = getConnected();
-            $stmt = $mysqli->prepare("UPDATE contacts_$user_id SET active=1 WHERE id = ?");
+            $stmt = $mysqli->prepare("UPDATE contacts_$user_id SET active=0 WHERE id = ?");
             $stmt->bind_param('i', $id);
             $stmt->execute(); 
             $stmt->close();

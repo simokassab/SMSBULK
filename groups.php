@@ -158,9 +158,9 @@ $(document).ready(function (e) {
 
 <!-- end modal -->
 <?php include('includes/nav.php');?>
-<h1 class='title'> Groups</h1>
+<h1 class='titlee'> Groups</h1>
     <!-- Begin page content -->
-    <div class="container-fluid"  >
+    <div class="container-fluid">
         <div id="navbar-example">
         <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -177,7 +177,7 @@ $(document).ready(function (e) {
             </ul>
             <!-- Tab panes {Fade}  -->
             <div class="tab-content" id='content1' >
-                <div class="tab-pane  " id="new" name="new" role="tabpanel" style='margin:2%;!important'><br/>  
+                <div class="tab-pane  " id="new" name="new" role="tabpanel" ><br/>  
                 <form method='post' action='groups.php'>
                     <h3 style='text-align:center;'>Add Group</h3><hr/>
                    <div class='row' style='margin:0 2% 2% 2%;'>
@@ -238,7 +238,7 @@ $(document).ready(function (e) {
                                 data-id="<?php echo $gg['id']; ?>" data-title="<?php echo $gg['name']; ?>" data-body="<?php echo $gg['description']; ?>">
                                 <i class="fa fa-trash-alt" style='color:white;'></i>
                                 </a>
-                                <a href="contacts.php?grid=<?php echo $gg['id']; ?>" title='View Contacts' class="btn btn-primary btn-sm">
+                                <a target="_blank" href="contacts.php?grid=<?php echo $gg['id']; ?>" title='View Contacts' class="btn btn-primary btn-sm">
                                 <i class="fa fa-user-tag" style='color:white;'></i>
                                 </a>
                             
@@ -395,13 +395,13 @@ var btnFinish = $('<button></button>').text('Upload')
         $(document).ready(function () {
             // function Edit POST
             $(document).on('click', '.edit-modal', function() {
-            $('#footer_action_button').text(" Update Post");
+            $('#footer_action_button').text(" Update ");
             $('#footer_action_button').addClass('glyphicon-check');
             $('#footer_action_button').removeClass('glyphicon-trash');
             $('.actionBtn').addClass('btn-success');
             $('.actionBtn').removeClass('btn-danger');
             $('.actionBtn').addClass('edit');
-            $('.modal-title').text('Post Edit');
+            $('.modal-title').text('Edit');
             $('.deleteContent').hide();
             $('.form-horizontal').show();
             $('#fid').val($(this).data('id'));
@@ -432,7 +432,7 @@ var btnFinish = $('<button></button>').text('Upload')
             $('.actionBtn').removeClass('btn-success');
             $('.actionBtn').addClass('btn-danger');
             $('.actionBtn').addClass('delete');
-            $('.modal-title').text('Delete Post');
+            $('.modal-title').text('Delete');
             $('.id').text($(this).data('id'));
             $('.deleteContent').show();
             $('.form-horizontal').hide();

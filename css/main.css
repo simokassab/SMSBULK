@@ -9,18 +9,18 @@ html {
   body {
     font-family: 'Menulis' !important;
     margin-bottom: 60px;
+    font-size: calc(0.1em + 0.8vw) !important;
   }
   .footer {
-   
     position: absolute;
     bottom: 0;
-    left:0;
     z-index: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color: #595959;
+    color: white;
   }
 
   .foot {
@@ -32,8 +32,8 @@ html {
     left:0;
     z-index: 0;
     height: 40px;
-    max-width: 230px;
-    width: 230px;
+    max-width: 200px;
+    width: 200px;
     background-color: #A0A0A0;
   }
 
@@ -68,7 +68,7 @@ html {
   }
   .toggle_radio input[type=radio]{
     display: none;
-    position: fixed/
+    position: fixed;
   }
   .toggle_radio label{
     font: 90%/1.618 "Source Sans Pro";
@@ -143,10 +143,15 @@ html {
     background-size: cover;
 }
 
-.title{
+.cont {
+  margin: 0 2% 2% 2%;
+}
+
+.titlee{
   text-align:center; 
   color:#0580BC; 
-  font-size:4vw;
+  font-size: calc(2em + 1vw);
+  text-shadow: 1px 1px #5A5A5A;
 }
   code {
     font-size: 80%;
@@ -195,20 +200,27 @@ html {
 
   .submen {
     position:absolute;
+  
     right:40%;
+    width: 220px;
     top:90%;
-    background:#fff; border-radius: 20px; box-shadow:10px 10px 0px rgba(0,0,0,0.1);
+    border: 1px solid #0580BC;
+    background:#fff; 
+    border-radius: 6px; 
+    box-shadow:6px 6px 6px 6px rgba(0,0,0,0.1);
   }
 
   .submen li {
     border-bottom: 1px solid #0580BC;
     font-weight: bold;
+    width: 220px !important;
 
   }
 
   .submen li a:hover {
     background-color:  #0580BC;
     color: white !important;
+    width: 220px !important;
 
   }
   
@@ -220,6 +232,16 @@ html {
     object-fit: cover;
     object-position: center right;
   
+}
+
+.image--cover1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0px;
+  object-fit: cover;
+  object-position: center right;
+
 }
 
   .image--profile {
@@ -329,6 +351,50 @@ html {
     background-size:100%;
   }
 
+  .column{
+    width:49%;
+    margin-right:.5%;
+    min-height:900px;
+    background:#fff;
+    float:left;
+  }
+  .column .dragbox{
+    margin:10px 2px  20px;
+    background:#fff;
+    position:"relative";
+    border:1px solid #946553;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+  }
+  .column .dragbox h2{
+    margin:0;
+    font-size:24px;
+    background:#2B94C6;
+    color:#fff;
+    border-bottom:1px solid #946553;
+    cursor:move;
+      padding: 3px;
+    
+  }
+  
+  .dragbox-content{
+    background:#FaFaFa;
+    min-height:200px;
+  }
+  .column  .placeholder{
+    background: #EED5B7;
+    border:1px dashed #946553;
+  }
+  
+  .opIcons
+  {
+  
+  float:right;
+  height:17px;
+  width:17px;
+  margin:0px 2px;
+  }
+
 
  
   .multiselect {
@@ -336,12 +402,16 @@ html {
   }
 
 
-  @media screen and (min-aspect-ratio: 1/1) {
+  @media screen and (min-width: 768) {
+    
     .resp {
       max-width: 100%; 
       display:block; 
       height: auto;
     }
+    .column .dragbox h2 {
+      font-size: calc(0.75em + 1vmin);
+   }
     .btnlogin {
       margin-bottom: 20px;
     }
@@ -350,7 +420,10 @@ html {
       text-align: center;
     } 
   }
-   @media screen and (max-aspect-ratio: 1/1) {
+  @media screen and (max-width: 767px) {
+    body {
+      font-size: calc(0.8em + 1vw) !important;
+    }
     .resp {
       max-width: 100%; 
       display:block; 
@@ -365,14 +438,15 @@ html {
       text-align: center;
     }
     #nav {
-     position: static;
+      position: absolute;
+      top: 0px;
+      right: 0px;
     }
 
     .submen {
-      position:absolute;
-      right:0%;
-      top:15%;
-      background:#fff; border-radius: 20px; box-shadow:10px 10px 0px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 100%;
+        right: 20%; 
     }
   }
 

@@ -9,11 +9,17 @@ $gr= new groups();
 $cr= new contacts();
 $res=$log->checklogin();
 
-$cr_all=$cr->getAll($_SESSION['user_id']);
+if((isset($_GET['grid'])) && ($_GET['grid']!=0)) {
+    $cr_all=$cr->getRowByGRID($_GET['grid'], $_SESSION['user_id']);  
+}
+else {
+    $cr_all=$cr->getAll($_SESSION['user_id']);  
+}
+
 
 $gr_all=$gr->getAll($_SESSION['user_id']);
 
-
+//print_r($cr_all);
 if(!$res)
     header("Location: login.php");
 ?>
@@ -124,7 +130,7 @@ $(document).ready(function (e) {
         </div>
     </div>
 <?php include('includes/nav.php');?>
-<h1 class='title'> Contacts</h1><br/>
+<h1 class='titlee'> Contacts</h1><br/>
     <!-- Begin page content -->
     <div class="container-fluid" style='padding:3% !important;' >
         <div id="navbar-example">
@@ -240,11 +246,9 @@ $(document).ready(function (e) {
                         <thead>
                             <tr>
                                 <th>Phone</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th>Name</th>
+                                <th>Groups</th>
                                 <th>Email</th>
-                                <th>Gender</th>
-                                <th>Address</th>
                                 <th class="text-center">
                                  
                                 </th>
@@ -256,17 +260,44 @@ $(document).ready(function (e) {
                             foreach($cr_all as $cc){
                         ?>
                         <tr class='group<?php echo $cc['id']; ?>'>
-                            <td style="width:8% !important;"><?php echo $cc['MSISDN'];?></td>
-                            <td><?php echo $cc['firstname'];?></td>
-                            <td><?php echo $cc['lastname'];?></td>
-                            <td><?php echo $cc['email'];?></td>
-                            <td style="width:7% !important;"><?php echo $cc['gender'];?></td>
-                            <td><?php echo $cc['address'];?></td>
+                            <td style="width:15% !important; "><?php echo $cc['MSISDN'];?></td>
+                            <td style="width:15% !important;"><?php echo $cc['firstname']. " ". $cc['lastname'];?></td>
+                            <?php 
+                            $p="";
+                                $grs=$cc['GRS_ID_FK'];
+                                $gr=explode(",", $grs);
+                                //if($gr[2])
+                                foreach($gr_all as $grp){
+                                    if(in_array($grp['id'], $gr)){
+                                            if($gr[1]=="")
+                                                $p.=$grp['name'];
+                                            else {
+                                                $p.=$grp['name'].", ";
+                                            } 
+                                        }
+                                        else {
+                                            
+                                        }
+                                    }
+                            if(substr($p, -2)==", "){
+                                $p= substr($p, 0, -2);
+                            }
+                            $email="";
+                            if (strlen($cc['email']) > 20) {
+                                $email=substr($cc['email'], 0, 20)."...";
+                            }
+                            else {
+                                $email=$cc['email'];
+                            }
+                            ?>
+                            <td style="width:25% !important;"><?php echo $p;?></td>
+                            <td style="width:20% !important;" title="<?php echo $email; ?>"><?php echo $email; ?></td>
                             <td class="text-center" style="width:20% !important;">
-                                <a href="#" id="<?php echo $cc['id'] ?>" class="btn btn-info btn-sm viewcontact" >
+                                <a href="editcontact.php?id=<?php echo $cc['id'] ?>" title="View/Edit Contact"
+                                 id="<?php echo $cc['id'] ?>" class="btn btn-info btn-sm viewcontact" >
                                 <i class="fa fa-eye" style='color:white;'></i>
                                 </a>
-                                <a href="#" class="delete-modal btn btn-danger btn-sm" data-id="<?php echo $cc['id'] ?>"  
+                                <a href="#" class="delete-modal btn btn-danger btn-sm" title="Delete Contact" data-id="<?php echo $cc['id'] ?>"  
                                 data-title="<?php echo $cc['MSISDN'] ?>"  data-body="<?php echo $cc['email'] ?>" >
                                 <i class="fa fa-trash" style='color:white;'></i>
                                 </a>
@@ -401,17 +432,13 @@ $( document ).ready(function() {
                     data: 'id=' +$('.id').text(),
                     success: function(data){
                         $.notify("Group has been deleted", "error");
-                       window.setTimeout(function () {
-                        location.reload();
-                        location.href = "./contacts.php#view";
-                        }, 1000); 
+                     //  window.setTimeout(function () {
+                     //   location.reload();
+                     //   location.href = "./contacts.php#view";
+                      //  }, 1000); 
                         }
                 });
             });
-    $(".viewcontact").click(function(){ 
-        $id=$(this).attr('id');
-          location.href = 'editcontact.php?id='+$id;
-    });
     var btnFinish = $('<button></button>').text('Upload')
                     .addClass('btn btn-info')
                     .on('click', function(){

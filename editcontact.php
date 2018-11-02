@@ -26,7 +26,7 @@ if(!$res)
 </script>
 <body class='bg'>
 <?php include('includes/nav.php');?>
-<h1 style='text-align:center; color:#0580BC; font-size:65px;'>Edit Contact No: <?php echo $cr_all['MSISDN']; ?></h1><br/>
+<h1 class='titlee'>Edit Contact No: <?php echo $cr_all['MSISDN']; ?></h1><br/>
     <!-- Begin page content -->
     <div class="container-fluid" style='background-color:white;'>
             <form action='requests/contacts/update.php' method='post' enctype='multipart/form-data'>
@@ -121,9 +121,9 @@ if(!$res)
                     });
                 </script>
             </div>
-            <button type='submit' id='save' class='btn btn-primary' style='display:none;'>Save</button>
+            <button type='submit' id='save' class='btn btn-primary' style='display:none;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
         </form>
-        <button  class="btn btn-warning" id="edit"  >Edit</button> <br/><br/><br/><br/>
+        <button  class="btn btn-warning" id="edit"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> <br/><br/>
     </div>
     <div>
        

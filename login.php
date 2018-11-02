@@ -19,7 +19,7 @@ include('includes/header.php');
         </div>
         <div class='col-sm-6'>
             <div class='login'>
-            <h2 style='text-align:center; margin-left:5%; color:#595959;'>Welcome back! Please login to your account. </h2>
+            <h2 style='text-align:center; margin-left:5%; color:#595959; font-size: calc(0.9em + 1vw)!important;'>Welcome back! Please login to your account. </h2>
             <?php
                     $res='';
                     if (isset($_GET['action'])) {
@@ -37,7 +37,6 @@ include('includes/header.php');
                     }
                 ?>
                 <form class="form-style-8" method='post' action='./requests/login.php'>
-                    
                     <input type="email" name="email" placeholder="Email"  class="form-control" /><br/>
                     <input type="password" name='pass' id="inputPassword" class="form-control" placeholder="Password" required>
                     <div class='row' style='margin-top:40px;'>
@@ -57,9 +56,10 @@ include('includes/header.php');
                              <button class=" btnsign " type="submit" name='btn-login'>Sign Up</button>
                         </div>
                     </div>
-                    </form>
-            </div>
+                </form>
+            </div>  
+        
         </div>
+        <?php include('includes/footer.php'); ?>
     </div>
 </div>
-<?php include('includes/footer.php'); ?>

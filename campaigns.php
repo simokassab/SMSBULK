@@ -124,7 +124,7 @@ $(document).ready(function (e) {
         </div>
     </div>
 <?php include('includes/nav.php');?>
-<h1 class='title'> Campaigns</h1><br/>
+<h1 class='titlee'> Campaigns</h1><br/>
     <!-- Begin page content -->
     <div class="container-fluid" style='padding:3% !important;' >
         <div id="navbar-example">
@@ -158,10 +158,10 @@ $(document).ready(function (e) {
                 <div class="tab-pane " id="sch" name="sch" role="tabpanel">
                     Scheduled
                 </div><!-- tab pane-->
-                <div class="tab-pane " id="draft" name="draft" role="tabpanel">
+                <div class="tab-pane " id="up" name="draft" role="tabpanel">
                     Drafts
                 </div><!-- tab pane-->
-                <div class="tab-pane " id="delet" name="delet" role="tabpanel">
+                <div class="tab-pane " id="up" name="delet" role="tabpanel">
                     Deleted..
                 </div><!-- tab pane-->
                 
