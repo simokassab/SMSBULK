@@ -468,3 +468,4 @@ var btnFinish = $('<button></button>').text('Upload')
         });
     </script>
 <?php// include('includes/footer.php'); ?>
+    </div></div></body>

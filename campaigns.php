@@ -149,7 +149,108 @@ $(document).ready(function (e) {
             <!-- Tab panes {Fade}  -->
             <div class="tab-content" id='content1'>
                 <div class="tab-pane" id="new" name="new" role="tabpanel"><br/>  
-                New Campaign
+                <form id='campaign' method = "POST" enctype = "multipart/form-data"><br/>
+                <h4 style='text-align:center;'>Start New Campaign</h4>
+                    <div id="smartwizard" style='margin:0 2% 2% 2%;'>
+                        <ul>
+                            <li><a href="#step-1">Step 1<br /><small>Campaign Name</small></a></li>
+                            <li><a href="#step-2">Step 2<br /><small>Campaign Type</small></a></li>
+                            <li><a href="#step-3" >Step 3<br /><small id="camptitle" ></small></a></li>
+                        </ul>
+                        <div id="list">
+                            <div id="step-1"><br/>
+                                <h2>Campaign Name: </h2><br/>
+                                <div id="form-step-0" role="form" data-toggle="validator" >
+                                    <div class="form-group">
+                                        <input type="name" class="form-control" id="grpname" name='grpname' required>
+                                    </div><br/>
+                                </div>
+                            </div>
+                            <div id="step-2"><br/> 
+                                <h2>Choose Type</h2><br/>
+                                <section id="plans">
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- item -->
+                                            <div class="col-md-4 text-center">
+                                                <div class="panel panel-danger panel-pricing">
+                                                    <div class="panel-body text-center"> <i class="fa fa-comments"></i>
+                                                        <p class='headerr'>Regular SMS</p>
+                                                    </div>
+                                                    <div class="panel-footer">
+                                                        <a id="regular" class="btn btn-lg btn-block btn-danger" style='color:white !important; font-weight: bold;' href="#">Select</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /item -->
+                                            <!-- item -->
+                                            <div class="col-md-4 text-center">
+                                                <div class="panel panel-warning panel-pricing">
+                                                    <div class="panel-body text-center"><i class="fa fa-boxes"></i>
+                                                        <p>Advanced</p>
+                                                    </div>
+                                                    <div class="panel-footer">
+                                                        <a id="advanced" class="btn btn-lg btn-block btn-warning" style='color:white !important;font-weight: bold;' href="#">Select</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /item -->
+                                            <!-- item -->
+                                            <div class="col-md-4 text-center">
+                                                <div class="panel panel-warning panel-pricing">
+                                                    <div class="panel-body text-center"><i class="fab fa-facebook"></i>
+                                                        <p>Social Media</p>
+                                                    </div>
+                                                    <div class="panel-footer">
+                                                        <a id="social" class="btn btn-lg btn-block btn-success" style='color:white !important;font-weight: bold;' href="#">Select</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /item -->
+                                        </div><br/><br/>
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="step-3" style="text-align: center;"><br/>
+                                <h2 id="camptype"></h2><br/>
+                                <div id="form-step-2" >
+                                    <div id="reg" class="reg">
+                                        <div class="form-group">
+                                            <label class="control-label" for="groups" >Groups*:</label><br/>
+                                            <select id="groups" multiple="multiple" name='groups'  >
+                                                <?php
+                                                foreach($gr_all as $gr){
+                                                    echo "<option value='".$gr['id']."'>".$gr['name']."</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                            <p id='errorgroups' class="error text-center alert alert-danger" style='display:none;'></p>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $(function() {
+                                                $('#groups').multiselect({
+                                                    enableFiltering: true,
+                                                    templates: {
+                                                        li: '<li><a href="javascript:void(0);"><label class="pl-2"></label></a></li>',
+                                                        filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search" type="text"></div></li>',
+                                                        filterClearBtn: ''
+                                                    },
+
+                                                    onInitialized: function(select, container) {
+                                                        // hide checkboxes
+                                                        // container.find('input[type=checkbox]').addClass('d-none');
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <div id="adv" style="display: none;">adv</div>
+                                    <div id="soc" style="display: none;">soc</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                   </form>
                 </div><!-- tab pane-->
                 <div class="tab-pane active" id="vieww" name='vieww' role="tabpanel">
                 <br/> 
@@ -169,6 +270,11 @@ $(document).ready(function (e) {
         </div>
     <div>
     <script>
+        $(window).bind('beforeunload',function(){
+            return 'are you sure you want to leave?';
+            $('#smartwizard').smartWizard("reset");
+            location.href='./campaigns.php#step-1';
+        });
     //check if its excel or not
     var _validFileExtensions = [".xls", ".xlsx"];    
         function ValidateSingleInput(oInput) {
@@ -193,9 +299,49 @@ $(document).ready(function (e) {
             return true;
         }
 $( document ).ready(function() {
-    $('#smartwizard').smartWizard("reset");
+    location.href='./campaigns.php#step-1';
+    //return true;
+    $('.panel-footer > .btn').on('click', function(event){
+        event.preventDefault();
+        //alert($(this).attr('id'));
+        var type=$(this).attr('id');
+        if(type=='regular'){
+            $('#reg').css('display', 'block');
+            $('#adv').css('display', 'none');
+            $('#soc').css('display', 'none');
+            $('#regular').html('Selected');
+            $('#advanced').html('Select');
+            $('#social').html('Select');
+            $('#camptype').html('Regular Campaign');
+            $('#camptitle').html('Regular Campaign');
+            $('#smartwizard').smartWizard("next");
+        }
+        if(type=='advanced'){
+            $('#adv').css('display', 'block');
+            $('#reg').css('display', 'none');
+            $('#soc').css('display', 'none');
+            $('#advanced').html('Selected');
+            $('#regular').html('Select');
+            $('#social').html('Select');
+            $('#camptype').html('Advanced Campaign');
+            $('#camptitle').html('Advanced Campaign');
+            $('#smartwizard').smartWizard("next");
+        }
+        if(type=='social'){
+            $('#soc').css('display', 'block');
+            $('#reg').css('display', 'none');
+            $('#adv').css('display', 'none');
+            $('#social').html('Selected');
+            $('#regular').html('Select');
+            $('#advanced').html('Select');
+            $('#camptype').html('Social Campaign');
+            $('#camptitle').html('Social Campaign');
+            $('#smartwizard').smartWizard("next");
+        }
+    });
+
     $('#excel').change(function(){
-        $('#formupload').submit();
+        $('#campaign').submit();
     });
     $('#formupload').on('submit', function(event){
         event.preventDefault();
@@ -274,11 +420,8 @@ $( document ).ready(function() {
 
             $('#smartwizard').smartWizard({
                     selected: 0,
-                    theme: 'arrows',
+                    theme: 'circles',
                     transitionEffect:'fade',
-                    toolbarSettings: {toolbarPosition: 'bottom',
-                                      toolbarExtraButtons: [btnCancel]
-                                    },
                     anchorSettings: {
                                 markDoneStep: true, // add done css
                                 markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
@@ -288,18 +431,14 @@ $( document ).ready(function() {
                  });
 
             $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
-                var elmForm = $("#form-step-" + stepNumber);
-                // stepDirection === 'forward' :- this condition allows to do the form validation
-                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
-                if(stepDirection === 'forward' && elmForm){
-                    elmForm.validator('validate');
-                    var elmErr = elmForm.children('.has-error');
-                    if(elmErr && elmErr.length > 0){
-                        // Form validation failed
-                        return false;
-                    }
+               // var elmForm = $("#form-step-" + stepNumber);
+               // alert(stepNumber);
+                if((stepNumber===0) && (stepDirection==='forward') ){
+                    $('.sw-btn-next').css('display', 'none');
                 }
-                return true;
+                else {
+                    $('.sw-btn-next').css('display', 'block');
+                }
             });
             $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
                 // Enable finish button only on last step
