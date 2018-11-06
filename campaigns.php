@@ -23,106 +23,11 @@ $(document).ready(function (e) {
     $('#table').DataTable( {
         responsive: true,
         "pagingType": "full_numbers"
-    } );
-   
-    $('.add_contact').on('click', function () {
-       // alert($('.name_').val());
-        var msisdn= $('#msisdn').val();
-        var fname=$('#fname').val();
-        var lname=$('#lname').val();
-        var email=$('#email').val();
-        var address=$('#address').val();
-        var gender=$('input[name=gender]:checked').val();
-        var groups=$('#groups').val();
-        var userid= <?php echo $_SESSION['user_id']; ?>;
-       // alert(gender);
-        if (msisdn=='' && groups==''){
-            $('#errorphone').css('display', 'block');
-            $('#errorphone').html('Required field <i class="fa fa-exclamation"></i>');
-            $('#errorgroups').css('display', 'block');
-            $('#errorgroups').html('Required field <i class="fa fa-exclamation"></i>');
-        }
-        else if (msisdn=='' && groups!=''){
-            $('#errorphone').css('display', 'block');
-            $('#errorphone').html('Required field <i class="fa fa-exclamation"></i>');
-            $('#errorgroups').css('display', 'none');
-        }
-        else if (msisdn!='' && groups==''){
-            $('#errorphone').css('display', 'none');
-            $('#errorgroups').css('display', 'block');
-            $('#errorgroups').html('Required field <i class="fa fa-exclamation"></i>');
-        }
-        else {
-            event.preventDefault();
-            $.ajax({
-                url: "./requests/contacts/addcontact.php",
-                type: "GET",
-                data: 'fname='+fname+'&lname='+lname+'&email='+email+'&address='+address+'&gender='+gender+'&groups='+groups+',&msisdn='+msisdn+'&user_id='+userid,
-                success: function(data)
-                {
-                    console.log(data);
-                // window.location.href = 'your_url';
-                $.notify("New Contact has been Added.", "success");
-                 window.setTimeout(function () {
-                    location.reload();
-                      location.href = "http://localhost/SMS/contacts.php#view";
-                   }, 1000);
-                },
-                error: function() 
-                {
-                    
-                } 	        
-            });
-        }
     });
+
 });
 </script>
 <body class='bg'>
-    <div id="myModal"class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal" role="modal">
-                <div class="form-group">
-                    <label class="control-label col-sm-2"for="id">ID</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="fid" disabled>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="name">Name</label>
-                    <div class="col-sm-10">
-                    <input type="name" class="form-control" id="t">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="description">Description</label>
-                    <div class="col-sm-10">
-                    <textarea type="name" class="form-control" id="b"></textarea>
-                    </div>
-                </div>
-                </form>
-                        <!-- Form Delete Post -->
-            <div class="deleteContent">
-                Are You sure want to delete <span class="title"></span>?
-                <span class="hidden id"></span>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn actionBtn" data-dismiss="modal">
-                <span id="footer_action_button" class="glyphicon"></span>
-                </button>
-                <button type="button" class="btn btn-warning" data-dismiss="modal">
-                <span class="glyphicon glyphicon"></span>close
-                </button>
-            </div>
-            </div>
-        </div>
-    </div>
 <?php include('includes/nav.php');?>
 <h1 class='titlee'> Campaigns</h1><br/>
     <!-- Begin page content -->
@@ -149,13 +54,18 @@ $(document).ready(function (e) {
             <!-- Tab panes {Fade}  -->
             <div class="tab-content" id='content1'>
                 <div class="tab-pane" id="new" name="new" role="tabpanel"><br/>  
-                <form id='campaign' method = "POST" enctype = "multipart/form-data"><br/>
-                <h4 style='text-align:center;'>Start New Campaign</h4>
+                <form id='campaign' name="campaign" method = "POST" enctype = "multipart/form-data"><br/>
+                    <div id="result">
+
+                    </div>
+                <h4 style='text-align:center;'>Start New Campaign</h4> <br/>
                     <div id="smartwizard" style='margin:0 2% 2% 2%;'>
                         <ul>
                             <li><a href="#step-1">Step 1<br /><small>Campaign Name</small></a></li>
                             <li><a href="#step-2">Step 2<br /><small>Campaign Type</small></a></li>
                             <li><a href="#step-3" >Step 3<br /><small id="camptitle" ></small></a></li>
+                            <li><a href="#step-4" >Step 4<br /><small id="campdate" >Sending Date</small></a></li>
+                            <li><a href="#step-5" >Step 5<br /><small id="campdate" >Summary</small></a></li>
                         </ul>
                         <div id="list">
                             <div id="step-1"><br/>
@@ -165,6 +75,7 @@ $(document).ready(function (e) {
                                         <input type="name" class="form-control" id="grpname" name='grpname' required>
                                     </div><br/>
                                 </div>
+                                <p id='errorname1' class="error text-center alert alert-danger" style='display:none;'></p>
                             </div>
                             <div id="step-2"><br/> 
                                 <h2>Choose Type</h2><br/>
@@ -173,6 +84,7 @@ $(document).ready(function (e) {
                                         <div class="row">
                                             <!-- item -->
                                             <div class="col-md-4 text-center">
+                                                <input type="hidden" id="camptype" name="camptype">
                                                 <div class="panel panel-danger panel-pricing">
                                                     <div class="panel-body text-center"> <i class="fa fa-comments"></i>
                                                         <p class='headerr'>Regular SMS</p>
@@ -211,41 +123,116 @@ $(document).ready(function (e) {
                                     </div>
                                 </section>
                             </div>
-                            <div id="step-3" style="text-align: center;"><br/>
+                            <div id="step-3" style="text-align: center;">
                                 <h2 id="camptype"></h2><br/>
-                                <div id="form-step-2" >
-                                    <div id="reg" class="reg">
-                                        <div class="form-group">
-                                            <label class="control-label" for="groups" >Groups*:</label><br/>
-                                            <select id="groups" multiple="multiple" name='groups'  >
-                                                <?php
-                                                foreach($gr_all as $gr){
-                                                    echo "<option value='".$gr['id']."'>".$gr['name']."</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                            <p id='errorgroups' class="error text-center alert alert-danger" style='display:none;'></p>
+                                <div id="form-step-2" role="form" data-toggle="validator">
+                                    <div class="row">
+                                        <div class="col col-sm-9">
+                                            <div id="reg" class="reg">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="groups" >Groups*:</label>
+                                                    <select id="groups" class="form-control" multiple="multiple" name='groups' >
+                                                        <?php
+                                                        foreach($gr_all as $gr){
+                                                            echo "<option value='".$gr['id']."'>".$gr['name']."</option>";
+                                                        }
+                                                        ?>
+                                                    </select>
+                                                    <p id='errorgroups' class="error text-center alert alert-danger" style='display:none;'></p>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(function() {
+                                                        $('#groups').multiselect({
+                                                            enableFiltering: true,
+                                                            templates: {
+                                                                li: '<li><a href="javascript:void(0);"><label class="pl-2"></label></a></li>',
+                                                                filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search" type="text"></div></li>',
+                                                                filterClearBtn: ''
+                                                            },
+
+                                                            onInitialized: function(select, container) {
+                                                                // hide checkboxes
+                                                                // container.find('input[type=checkbox]').addClass('d-none');
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+
+                                                <input type="hidden" id="campgroups" name="campgroups" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-sm-9">
+                                            <div class="form-group">
+                                                <label class="control-label" for="textarea"  role="form" data-toggle="validator">SMS Body*:</label>
+                                                <textarea class="form-control" id="textarea" name="textarea" ></textarea>
+                                                <div id="textarea_feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-3">
+                                            <label class="form-control-label" for="point">Points</label>
+                                            <input type="text" class="form-control" style="width: 60px; margin-left: 43%;" id="point" name="point" readonly="true" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-sm-12" style="text-align: center;">
+                                            <p id='errorname' class="error text-center alert alert-danger" style='display:none;'></p>
+                                        </div>
+
+                                    </div>
+                                    <div id="adv" style="display: none;">adv</div>
+                                    <div id="soc" style="display: none;">soc</div>
+                                </div>
+                            </div>
+                            <div id="step-4"><br/><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="control-label" for="datetimepicker5">Pick a date</label>
+                                            <input type="text" class="form-control datetimepicker-input" id="datetimepicker5" name="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5"/>
                                         </div>
                                         <script type="text/javascript">
-                                            $(function() {
-                                                $('#groups').multiselect({
-                                                    enableFiltering: true,
-                                                    templates: {
-                                                        li: '<li><a href="javascript:void(0);"><label class="pl-2"></label></a></li>',
-                                                        filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search" type="text"></div></li>',
-                                                        filterClearBtn: ''
-                                                    },
+                                            $(function () {
 
-                                                    onInitialized: function(select, container) {
-                                                        // hide checkboxes
-                                                        // container.find('input[type=checkbox]').addClass('d-none');
+                                                $('#datetimepicker5').datetimepicker({
+                                                    minDate: new Date(),
+                                                    format: 'YYYY-MM-DD HH:mm:ss',
+                                                    icons: {
+                                                        time: "fa fa-clock",
+                                                        date: "fa fa-calendar",
+                                                        up: "fa fa-arrow-up",
+                                                        down: "fa fa-arrow-down"
                                                     }
                                                 });
                                             });
                                         </script>
                                     </div>
-                                    <div id="adv" style="display: none;">adv</div>
-                                    <div id="soc" style="display: none;">soc</div>
+                                </div>
+                            </div>
+                            <div id="step-5"><br/>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <h2>Summary: </h2>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            Campaign Name: <span class="summary" id="scampname"></span><br/><hr/>
+                                            Campaign Type: <span class="summary" id="scamptype"></span><br/><hr/>
+                                            Selected Groups: <span class="summary" id="scampgroups"></span><br><hr/>
+                                            SMS Body: <span class="summary" id="scampbody"></span><br/><hr/>
+                                            Sending Date: <span class="summary" id="scampdate"></span><br/><hr/>
+                                            Deduced Credits: <span class="summary" id="scredits"></span><br/><hr/>
+                                        </div>
+                                    </div><br/>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button type="submit" class="btn btn-success" id="sumitreg" style="width: 100%;">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -269,43 +256,55 @@ $(document).ready(function (e) {
             </div>
         </div>
     <div>
-    <script>
-        $(window).bind('beforeunload',function(){
-            return 'are you sure you want to leave?';
-            $('#smartwizard').smartWizard("reset");
-            location.href='./campaigns.php#step-1';
-        });
-    //check if its excel or not
-    var _validFileExtensions = [".xls", ".xlsx"];    
-        function ValidateSingleInput(oInput) {
-            if (oInput.type == "file") {
-                var sFileName = oInput.value;
-                if (sFileName.length > 0) {
-                    var blnValid = false;
-                    for (var j = 0; j < _validFileExtensions.length; j++) {
-                        var sCurExtension = _validFileExtensions[j];
-                        if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
-                            blnValid = true;
-                            break;
-                        }
-                    }
-                    if (!blnValid) {
-                        alert("Sorry, " + sFileName + " is invalid, allowed extensions are: " + _validFileExtensions.join(", "));
-                        oInput.value = "";
-                        return false;
-                    }
-                }
-            }
-            return true;
-        }
+<script>
+
 $( document ).ready(function() {
+    $(window).bind('beforeunload',function(){
+         //return 'are you sure you want to leave?';
+        // $('#smartwizard').smartWizard("reset");
+        // location.href='./campaigns.php#step-1';
+    });
     location.href='./campaigns.php#step-1';
-    //return true;
+    $('#smartwizard').smartWizard("reset");
+    $('#textarea').keyup(function() {
+        //  alert( $('#textarea').val().length);
+        var text_length = $('#textarea').val().length;
+        var text = $('#textarea').val();
+        if (text.match(/[\u0600-\u06FF]/)) {
+            text_max = 70;
+            $('#point').val('1');
+            if((text_length>70) && (text_length<=140)){
+                $('#point').val('2');
+            }
+            if((text_length>140) && (text_length<=210)){
+                $('#point').val('3');
+            }
+            if((text_length>210) && (text_length<=280)){
+                $('#point').val('4');
+            }
+
+
+        } else  {
+            text_max = 160;
+            $('#point').val('1');
+            if((text_length>160) && (text_length<=320)){
+                $('#point').val('2');
+            }
+            if((text_length>320) && (text_length<=480)){
+                $('#point').val('3');
+            }
+            if((text_length>480) && (text_length<=640)){
+                $('#point').val('4');
+            }
+
+        }
+        $('#textarea_feedback').html(text_length + ' characters');
+    });
     $('.panel-footer > .btn').on('click', function(event){
         event.preventDefault();
         //alert($(this).attr('id'));
-        var type=$(this).attr('id');
-        if(type=='regular'){
+        typee=$(this).attr('id');
+        if(typee=='regular'){
             $('#reg').css('display', 'block');
             $('#adv').css('display', 'none');
             $('#soc').css('display', 'none');
@@ -315,8 +314,9 @@ $( document ).ready(function() {
             $('#camptype').html('Regular Campaign');
             $('#camptitle').html('Regular Campaign');
             $('#smartwizard').smartWizard("next");
+            $('#camptype').val(typee);
         }
-        if(type=='advanced'){
+        if(typee=='advanced'){
             $('#adv').css('display', 'block');
             $('#reg').css('display', 'none');
             $('#soc').css('display', 'none');
@@ -326,8 +326,9 @@ $( document ).ready(function() {
             $('#camptype').html('Advanced Campaign');
             $('#camptitle').html('Advanced Campaign');
             $('#smartwizard').smartWizard("next");
+            $('#camptype').val(typee);
         }
-        if(type=='social'){
+        if(typee=='social'){
             $('#soc').css('display', 'block');
             $('#reg').css('display', 'none');
             $('#adv').css('display', 'none');
@@ -337,68 +338,31 @@ $( document ).ready(function() {
             $('#camptype').html('Social Campaign');
             $('#camptitle').html('Social Campaign');
             $('#smartwizard').smartWizard("next");
+            $('#camptype').val(typee);
         }
+
     });
 
-    $('#excel').change(function(){
-        $('#campaign').submit();
-    });
-    $('#formupload').on('submit', function(event){
+    $('#campaign').on('submit', function(event){
         event.preventDefault();
         $.ajax({
-            url: 'requests/contacts/upload.php',
+            url: 'requests/campaigns/add.php',
             method: 'POST',
             data: new FormData(this),
             contentType: false,
             processData: false,
             success: function(data){
-                $('#result').html("<center><h3>Loading...</h3></center>");
-                $.notify("Uploading..", "info");
+                if(data==1){
+                    $.notify("Campaign has been created successfully..", "success");
+                }
+                $('#result').html("");
+               //$.notify("Uploading..", "info");
                 window.setTimeout(function () {
-                        //location.reload();
+                        location.reload();
                         $('#result').html(data);
                         }, 2000);
             }
         })
-    });
-    $('#excel').filestyle({
-				buttonName : 'btn-info',
-                buttonText : 'Select Your Excel'
-			});
-    $(document).on('click', '.delete-modal', function() {
-            
-            $('#footer_action_button').text(" Delete");
-            $('#footer_action_button').removeClass('glyphicon-check');
-            $('#footer_action_button').addClass('glyphicon-trash');
-            $('.actionBtn').removeClass('btn-success');
-            $('.actionBtn').addClass('btn-danger');
-            $('.actionBtn').addClass('delete');
-            $('.modal-title').text('Delete Post');
-            $('.id').text($(this).data('id'));
-            $('.deleteContent').show();
-            $('.form-horizontal').hide();
-            $('.title').html($(this).data('title'));
-            $('#myModal').modal('show');
-            });
-           // 
-            $('.modal-footer').on('click', '.delete', function(){
-             //   alert($('.id').text());
-                $.ajax({
-                    type: 'GET',
-                    url: './requests/contacts/deletecontact.php',
-                    data: 'id=' +$('.id').text(),
-                    success: function(data){
-                        $.notify("Group has been deleted", "error");
-                       window.setTimeout(function () {
-                        location.reload();
-                        location.href = "./contacts.php#view";
-                        }, 1000); 
-                        }
-                });
-            });
-    $(".viewcontact").click(function(){ 
-        $id=$(this).attr('id');
-          location.href = 'editcontact.php?id='+$id;
     });
     var btnFinish = $('<button></button>').text('Upload')
                     .addClass('btn btn-info')
@@ -418,37 +382,85 @@ $( document ).ready(function() {
                                 $('.bootstrap-filestyle > input').val("");
                             });
 
-            $('#smartwizard').smartWizard({
-                    selected: 0,
-                    theme: 'circles',
-                    transitionEffect:'fade',
-                    anchorSettings: {
-                                markDoneStep: true, // add done css
-                                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
-                                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
-                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
-                            }
-                 });
+    $('#smartwizard').smartWizard({
+            selected: 0,
+            theme: 'circles',
+            transitionEffect:'fade',
+            anchorSettings: {
+                        markDoneStep: true, // add done css
+                        markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                        removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                        enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                    }
+         });
 
-            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
-               // var elmForm = $("#form-step-" + stepNumber);
-               // alert(stepNumber);
-                if((stepNumber===0) && (stepDirection==='forward') ){
-                    $('.sw-btn-next').css('display', 'none');
-                }
-                else {
-                    $('.sw-btn-next').css('display', 'block');
-                }
-            });
-            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
-                // Enable finish button only on last step
-                if(stepNumber == 3){
-                    $('.btn-finish').removeClass('disabled');
-                }else{
-                    $('.btn-finish').addClass('disabled');
-                }
-            });
-});
+    $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+       // var elmForm = $("#form-step-" + stepNumber);
+        //alert(stepNumber);
+        if((stepNumber===0) && (stepDirection==='forward') ){
+            if($('#grpname').val()==''){
+                $('#errorname1').css('display', 'block');
+                $('#errorname1').html('Please Fill the Campaign name');
+                return false;
+            }
+            else {
+                $('#errorname1').css('display', 'none');
+                $('.sw-btn-next').css('display', 'none');
+            }
 
+        }
+        else {
+            $('.sw-btn-next').css('display', 'block');
+        }
+        if((stepNumber===2) && (stepDirection==='forward') ){
+
+            if(($('#textarea').val()=='') && ($('#groups').val()=='')){
+
+              $('#errorname').css('display', 'block');
+              $('#errorname').html('Please Choose at least a group and fill the SMS Body !!');
+              return false;
+            }
+            if(($('#textarea').val()!='') && ($('#groups').val()=='')){
+                // alert($('#groups').val());
+                $('#errorname').css('display', 'block');
+                $('#errorname').html('Please Choose at least a group');
+                return false;
+            }
+            if(($('#textarea').val()=='') && ($('#groups').val()!='')){
+                // alert($('#groups').val());
+                $('#errorname').css('display', 'block');
+                $('#errorname').html('Please fill the SMS Body !!');
+                return false;
+            }
+            if(($('#textarea').val()!='') && ($('#groups').val()!='')){
+                // alert($('#groups').val());
+                $('#errorname').css('display', 'none');
+                $('#errorname').html('');
+               // return false;
+            }
+            $('#campgroups').val($('#groups').val());
+        }
+        return true;
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+        // Enable finish button only on last step
+        //alert(stepNumber);
+        if(stepNumber==4){
+            $('#scampname').html($('#grpname').val());
+            $('#scamptype').html(typee);
+            var groups= $('#groups').find(":selected").text();;
+            $('#scampgroups').html(groups);
+            $('#scampbody').html($('#textarea').val());
+            $('#scampdate').html($('#datetimepicker5').val());
+        }
+
+        if(stepNumber == 4){
+            $('.sw-btn-next').css('display', 'none');
+           // $('.sw-btn-prev').css('display', 'none');
+            //$('.btn-n').removeClass('disabled');
+        }
+    });
+
+    });
   </script>
 <?php //include('includes/footer.php'); ?>

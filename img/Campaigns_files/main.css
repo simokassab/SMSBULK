@@ -443,12 +443,6 @@ html {
 
 }
 
-.summary {
-    font-weight: bold;
-    font-size: calc(1em + 0.5vmin);
-    color: #0580BC !important;
-}
-
 
   @media screen and (min-width: 768px) {
     
