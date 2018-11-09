@@ -4,15 +4,20 @@ session_start();
 include_once('classes/login.php');
 include_once('classes/groups.php');
 include_once('classes/contacts.php');
+include_once('classes/links.php');
 $log= new login();
 $gr= new groups();
+$link= new links();
 $cr= new contacts();
+
+
 $res=$log->checklogin();
 
 $cr_all=$cr->getAll($_SESSION['user_id']);
 
 $gr_all=$gr->getAll($_SESSION['user_id']);
 
+//echo rand(000000,999999);
 
 if(!$res)
     header("Location: login.php");
@@ -162,7 +167,7 @@ $(document).ready(function (e) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" id="regdiv">
                                         <div class="col col-sm-9">
                                             <div class="form-group">
                                                 <label class="control-label" for="textarea"  role="form" data-toggle="validator">SMS Body*:</label>
@@ -181,7 +186,125 @@ $(document).ready(function (e) {
                                         </div>
 
                                     </div>
-                                    <div id="adv" style="display: none;">adv</div>
+
+                                    <!--  Advanced Campaign -->
+                                    <div id="adv" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-12"><h3>Predefined Templates</h3></div><br/>
+                                                <div class="category-filter pb-5">
+                                                    <button type="button" class="btn btn-outline-primary category-button active mr-3" data-filter="all">All</button>
+                                                    <?php
+                                                        include_once ('classes/db_connect.php');
+                                                        $mysql=getConnected();
+                                                        $result = mysqli_query($mysql,
+                                                            "CALL `GetCategories`") or die("Query fail: " . mysqli_error());
+
+                                                        //loop the result set
+                                                        while ($row = mysqli_fetch_array($result)){
+                                                           // echo $row['name'];
+                                                            echo '<button type="button" class="btn btn-outline-primary category-button mr-3" data-filter="'.$row['name'].'">'.$row['name'].'</button>';
+                                                        }
+                                                    ?>
+                                                    <script type="text/javascript">
+                                                        $('.category-filter .category-button').categoryFilter();
+                                                    </script>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row tiles">
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5 canvass" >
+                                                <img src="img/templates_canvas/flexbox.PNG" class="img-fluid img-responsive" data-target="business" >
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5 canvass">
+                                                <img src="https://placeimg.com/635/480/people" class="img-fluid img-responsive">
+                                                <div class="usethis" style="display: none;">Hello World</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5 canvass">
+                                                <img src="https://placeimg.com/640/480/nature" class="img-fluid img-responsive">
+                                                <div class="usethis" style="display: none;">Hello World</div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5 canvass">
+                                                <img src="https://placeimg.com/645/480/nature" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5 canvass">
+                                                <img src="https://placeimg.com/640/480/arch" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5 canvass">
+                                                <img src="https://placeimg.com/635/480/nature" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5 canvass">
+                                                <img src="https://placeimg.com/640/480/people" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5 canvass">
+                                                <img src="./img/templates_canvas/blank.jpg" class="img-fluid img-responsive" data-target="blank">
+                                            </div>
+                                        </div>
+                                        <script>
+                                            $('.canvass').click(function() {
+                                               // $('.canvass').append('test');
+                                                var targett= $(this).find("img").attr('data-target');
+                                               // alert(targett);
+                                                var campname=$('#grpname').val();
+                                                var formData =  {
+                                                    'campname': campname,
+                                                    'camptype': typee,
+                                                    'template': targett
+                                                };
+                                                console.log(formData);
+                                                //insert new campaign and new land page ID
+                                                $.ajax({
+                                                    url: "./requests/campaigns/add_advanced.php",
+                                                    type: "post",
+                                                    data: formData,
+                                                    success: function(d) {
+                                                        $.notify("You will be redirected to Page Builder", "info");
+                                                        console.log(d);
+
+                                                        window.setTimeout(function () {
+                                                            location.href='vebs/editor.php?page='+targett+'&r='+d;
+                                                        }, 2000);
+                                                    }
+                                                });
+
+
+                                            });
+                                        </script>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h3>Used Templates</h3>
+                                            </div><br/>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5">
+                                                <img src="https://placeimg.com/645/480/people" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5">
+                                                <img src="https://placeimg.com/635/480/people" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5">
+                                                <img src="https://placeimg.com/640/480/nature" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Business mb-5">
+                                                <img src="https://placeimg.com/645/480/nature" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5">
+                                                <img src="https://placeimg.com/640/480/arch" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5">
+                                                <img src="https://placeimg.com/635/480/nature" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5">
+                                                <img src="https://placeimg.com/640/480/people" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3 filter Education mb-5">
+                                                <img src="https://placeimg.com/660/480/nature" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  Social Campaign -->
                                     <div id="soc" style="display: none;">soc</div>
                                 </div>
                             </div>
@@ -264,8 +387,8 @@ $( document ).ready(function() {
         // $('#smartwizard').smartWizard("reset");
         // location.href='./campaigns.php#step-1';
     });
-    location.href='./campaigns.php#step-1';
-    $('#smartwizard').smartWizard("reset");
+  //  location.href='./campaigns.php#step-1';
+  //  $('#smartwizard').smartWizard("reset");
     $('#textarea').keyup(function() {
         //  alert( $('#textarea').val().length);
         var text_length = $('#textarea').val().length;
@@ -320,6 +443,7 @@ $( document ).ready(function() {
             $('#adv').css('display', 'block');
             $('#reg').css('display', 'none');
             $('#soc').css('display', 'none');
+            $('#regdiv').css('display', 'none');
             $('#advanced').html('Selected');
             $('#regular').html('Select');
             $('#social').html('Select');
@@ -327,6 +451,7 @@ $( document ).ready(function() {
             $('#camptitle').html('Advanced Campaign');
             $('#smartwizard').smartWizard("next");
             $('#camptype').val(typee);
+            $('body').scrollTo('420px', 800);
         }
         if(typee=='social'){
             $('#soc').css('display', 'block');

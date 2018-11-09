@@ -3,45 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="46f12ce9-2966-495a-bea1-c525f36186b5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_arrows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_arrows.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_circles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_circles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_dots.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/css/smart_wizard_theme_dots.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/js/jquery.smartWizard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/dist/js/jquery.smartWizard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/ajaxtest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/smartwizard-ajax.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/smartwizard-events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/smartwizard-input.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/smartwizard-modal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/examples/smartwizard-multiple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/src/css/smart_wizard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/src/css/smart_wizard_theme_arrows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/src/css/smart_wizard_theme_circles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/src/css/smart_wizard_theme_dots.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/src/js/jquery.smartWizard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/test/test-template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartWizard-master/test/test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/campaigns.php" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/campaigns.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/campaigns.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/campaigns/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/campaigns/add.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,47 +38,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="campaigns.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="campaigns.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/campaigns.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="362" column="23" selection-start-line="362" selection-start-column="23" selection-end-line="362" selection-end-column="23" />
+            <state relative-caret-position="-1955">
+              <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="links.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/links.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_advanced.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requests/campaigns/add_advanced.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="54" selection-start-line="12" selection-end-line="12" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/landing_page/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builder.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vebs/libs/builder/builder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="1186" column="34" selection-start-line="1186" selection-start-column="34" selection-end-line="1186" selection-end-column="34" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests/campaigns/add.php">
+      <file leaf-file-name="land_page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/land_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queue.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/queue.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/contacts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="459">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -120,38 +98,10 @@
       <file leaf-file-name="campaigns.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/campaigns.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="36" />
+            <state relative-caret-position="476">
+              <caret line="28" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests/contacts/update.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="addgroup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests/groups/addgroup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="104" selection-start-line="29" selection-start-column="104" selection-end-line="29" selection-end-column="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updategroup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests/groups/updategroup.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -165,8 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cookir</find>
-      <find>background</find>
       <find>nav-item</find>
       <find>nav-tabs</find>
       <find>sw-theme-circles</find>
@@ -179,6 +127,24 @@
       <find>edit</find>
       <find>hidden</find>
       <find>point</find>
+      <find>&lt;a</find>
+      <find>target</find>
+      <find>init</find>
+      <find>seth</find>
+      <find>html</find>
+      <find>gethtml</find>
+      <find>html/image</find>
+      <find>var Input = {</find>
+      <find>alert</find>
+      <find>setVal</find>
+      <find>setva</find>
+      <find>socialplugin</find>
+      <find>mobile-view</find>
+      <find>viewpo</find>
+      <find>mobile</find>
+      <find>html/im</find>
+      <find>upload</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,13 +159,25 @@
         <option value="$PROJECT_DIR$/js/maxlength.js" />
         <option value="$PROJECT_DIR$/js/test.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/classes/campaigns.php" />
         <option value="$PROJECT_DIR$/classes/contacts.php" />
         <option value="$PROJECT_DIR$/classes/queue.php" />
+        <option value="$PROJECT_DIR$/includes/header.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/vebs/demo/blank/index.html" />
+        <option value="$PROJECT_DIR$/vebs/libs/builder/components-widgets.js" />
         <option value="$PROJECT_DIR$/requests/campaigns/add.php" />
+        <option value="$PROJECT_DIR$/classes/campaigns.php" />
         <option value="$PROJECT_DIR$/campaigns.php" />
+        <option value="$PROJECT_DIR$/vebs/css/editor.css" />
+        <option value="$PROJECT_DIR$/vebs/libs/builder/components-bootstrap4.js" />
+        <option value="$PROJECT_DIR$/vebs/libs/builder/inputs.js" />
+        <option value="$PROJECT_DIR$/vebs/upload.php" />
+        <option value="$PROJECT_DIR$/vebs/editor.php" />
+        <option value="$PROJECT_DIR$/vebs/libs/builder/builder.js" />
+        <option value="$PROJECT_DIR$/classes/land_page.php" />
+        <option value="$PROJECT_DIR$/classes/links.php" />
+        <option value="$PROJECT_DIR$/requests/campaigns/add_advanced.php" />
+        <option value="$PROJECT_DIR$/landing_page/index.php" />
       </list>
     </option>
   </component>
@@ -211,7 +189,7 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/datetimepicker-2.5.20/package.json" />
+      <path value="$PROJECT_DIR$/vebs/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6">
@@ -243,12 +221,13 @@
             <path>
               <item name="SMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="SMS" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="SMS" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
+              <item name="campaigns" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,6 +240,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SMS\vebs\libs\builder\icons" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,7 +279,10 @@
       <workItem from="1540547356766" duration="418000" />
       <workItem from="1541409087386" duration="331000" />
       <workItem from="1541409786010" duration="15187000" />
-      <workItem from="1541488779621" duration="21986000" />
+      <workItem from="1541488779621" duration="22987000" />
+      <workItem from="1541575678325" duration="12318000" />
+      <workItem from="1541661798856" duration="17361000" />
+      <workItem from="1541748152201" duration="14859000" />
     </task>
     <task id="LOCAL-00001" summary="update campaigns">
       <created>1541423189662</created>
@@ -308,32 +295,31 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37922000" />
+    <option name="totallyTimeSpent" value="83461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1296875" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32946146" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14635417" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,20 +333,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update campaigns" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/groups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6511">
-          <caret line="383" column="28" selection-start-line="375" selection-start-column="15" selection-end-line="383" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/maxlength.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3213">
@@ -386,15 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4947">
           <caret line="291" column="15" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -443,16 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test.php" />
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -460,25 +414,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="447" column="29" selection-start-line="447" selection-start-column="29" selection-end-line="447" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editcontact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397">
-          <folding>
-            <element signature="e#154#160#0" expanded="true" />
-            <element signature="e#160#166#0" expanded="true" />
-            <element signature="e#166#172#0" expanded="true" />
-            <element signature="e#146#152#0" expanded="true" />
-            <element signature="e#152#158#0" expanded="true" />
-            <element signature="e#158#164#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2397" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groups.php">
@@ -499,14 +437,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requests/groups/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requests/groups/updategroup.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -514,24 +445,10 @@
     <entry file="file://$PROJECT_DIR$/requests/contacts/update.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="104" selection-start-line="29" selection-start-column="104" selection-end-line="29" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requests/groups/addgroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -544,31 +461,199 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="1139">
           <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7820">
+          <caret line="460" column="18" selection-start-line="460" selection-start-column="18" selection-end-line="460" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/icons/ratio.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/icons/rectangle.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3774">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/demo/blank/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../vebs1/libs/builder/components-widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="347" selection-start-line="347" selection-end-line="394" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8857">
+          <caret line="537" column="54" selection-start-line="537" selection-start-column="54" selection-end-line="537" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requests/campaigns/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="476">
+          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/plugin-codemirror.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/css/editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="11690" column="15" selection-start-line="11690" selection-start-column="15" selection-end-line="11690" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-bootstrap4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="927" column="4" selection-start-line="927" selection-start-column="4" selection-end-line="927" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="e#186#193#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/inputs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="276" column="76" selection-start-line="276" selection-start-column="76" selection-end-line="276" selection-end-column="76" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/editor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/campaigns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/landing_page.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/builder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="1186" column="34" selection-start-line="1186" selection-start-column="34" selection-end-line="1186" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/land_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/campaigns.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="362" column="23" selection-start-line="362" selection-start-column="23" selection-end-line="362" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1955">
+          <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/links.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/campaigns/add_advanced.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="54" selection-start-line="12" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c/FyPN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="53" lean-forward="true" selection-start-column="53" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c/gEfQ.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c/gzsq.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/landing_page/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
         </state>
       </provider>
     </entry>

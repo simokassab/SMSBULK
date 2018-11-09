@@ -19,13 +19,14 @@ echo $_POST['point'];
     $body=$_POST['textarea'];
     $date=$_POST['datetimepicker5'];
    // echo $date;
+    $status='online';
     $cmp= new campaigns();
     $con= new contacts();
     $queue= new queue();
     $contacts=array();
     $result=0;
     //$groups=array();
-    $camp_id = $cmp->insert($_POST['grpname'], $_POST['camptype'], 0 ); //insert new campaign and get the inserted id
+    $camp_id = $cmp->insert($_POST['grpname'], $_POST['camptype'], 0, $status); //insert new campaign and get the inserted id
     //echo
     $grps=$_POST['campgroups']; //posted groups
     $user_id=$_SESSION['user_id'];

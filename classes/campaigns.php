@@ -3,10 +3,10 @@
 
     class campaigns {
 
-        function insert($name, $type,  $land_id){
+        function insert($name, $type,  $land_id, $status){
             $mysqli = getConnected();
-            $query = "INSERT INTO campaigns VALUES (NULL, '$name', '$type', '$land_id',  NOW(), 1, 'online')";
-           // echo $query;
+            $query = "INSERT INTO campaigns VALUES (NULL, '$name', '$type', '$land_id',  NOW(), 1, '$status')";
+            //echo $query;
             $mysqli->query($query);
             return $mysqli->insert_id;
         }
