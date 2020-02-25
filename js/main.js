@@ -90,7 +90,7 @@ jQuery(document).ready(function(){
 
 	function moveNavigation(){
   		var mq = checkMQ();
-        
+
         if ( mq == 'mobile' && topNavigation.parents('.cd-side-nav').length == 0 ) {
         	detachElements();
 			topNavigation.appendTo(sidebar);
@@ -116,7 +116,7 @@ jQuery(document).ready(function(){
 
 	function checkScrollbarPosition() {
 		var mq = checkMQ();
-		
+
 		if( mq != 'mobile' ) {
 			var sidebarHeight = sidebar.outerHeight(),
 				windowHeight = $(window).height(),
@@ -127,4 +127,5 @@ jQuery(document).ready(function(){
 		}
 		scrolling = false;
 	}
+
 });

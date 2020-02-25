@@ -53,14 +53,14 @@
 #sidebar ul li a {
     padding: 8%;
     display: block;
-    color: #0580BC !important;
+    color: #8F539F !important;
     
 }
 
 
 .icons {
     font-size: 32px; 
-    color:#0580BC;
+    color:#8F539F;
 }
 
 .hov {
@@ -73,7 +73,7 @@
 #sidebar ul li a:hover {
     color: white !important;
     text-decoration: none !important;
-    background: #0580BC;
+    background: #8F539F;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color  0.5s ease-out;
     -o-transition: background-color  0.5s ease-out;
@@ -82,13 +82,13 @@
 
 #sidebar ul li.active  {
     color: #fff !important;
-    background: #0580BC;
+    background: #8F539F;
 }
 
 #sidebar ul li.active > a {
     color: white !important;
     text-decoration: none !important;
-    background: #0580BC;
+    background: #8F539F;
 }
 
 
@@ -136,11 +136,11 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #0580BC;
+    color: #8F539F;
 }
 
 a.article, a.article:hover {
-    background: #0580BC !important;
+    background: #8F539F !important;
     color: #fff !important;
 }
 

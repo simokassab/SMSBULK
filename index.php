@@ -2,12 +2,9 @@
 ob_start();
 session_start();
 include_once('classes/login.php');
+header("Location: campaigns.php");
 $log= new login();
 $res=$log->checklogin();
-
-
-
-
 
 if(!$res)
     header("Location: login.php");
@@ -15,8 +12,8 @@ if(!$res)
 <?php include('includes/header.php'); ?>
 <style>
 
-
 </style>
+
 <script>
 $(
 function(){

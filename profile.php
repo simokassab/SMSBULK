@@ -47,7 +47,8 @@ include('includes/header.php'); ?>
         <form class="form-horizontal" role="form" name='edit' id='edit'  method='POST' enctype="multipart/form-data">
         <div class="form-group">
             <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" name='username' value='<?php echo $row['username']; ?>'>
+            <input type="text" class="form-control" disabled  id="username1" name='username1' value='<?php echo $row['username']; ?>'>
+            <input type="hidden" class="form-control"  id="username" name='username' value='<?php echo $row['username']; ?>'>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>

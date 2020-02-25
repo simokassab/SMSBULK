@@ -149,7 +149,7 @@ html {
 
 .titlee{
   text-align:center; 
-  color:#0580BC; 
+  color:#8F539F;
   font-size: calc(2em + 1vw);
   text-shadow: 1px 1px #5A5A5A;
 }
@@ -162,7 +162,7 @@ html {
   }
 
   .changepass {
-    color : #0580BC !important;
+    color : #8F539F !important;
   }
 
 
@@ -204,21 +204,21 @@ html {
     right:40%;
     width: 220px;
     top:90%;
-    border: 1px solid #0580BC;
+    border: 1px solid #8F539F;
     background:#fff; 
     border-radius: 6px; 
     box-shadow:6px 6px 6px 6px rgba(0,0,0,0.1);
   }
 
   .submen li {
-    border-bottom: 1px solid #0580BC;
+    border-bottom: 1px solid #8F539F;
     font-weight: bold;
     width: 220px !important;
 
   }
 
   .submen li a:hover {
-    background-color:  #0580BC;
+    background-color:  #8F539F;
     color: white !important;
     width: 220px !important;
 
@@ -269,7 +269,7 @@ html {
     border-radius: 50%;
 }
 .btnSubmit {
-    background-color: #0580BC;
+    background-color: #8F539F;
     border-radius: 4px;
     padding: 10px;
     border: #333 1px solid;
@@ -323,9 +323,9 @@ html {
   font-weight: 600
 }
 #navitm a.active {
-  border-top: 2px solid #0580BC;
-  border-right: 2px solid #0580BC;
-  border-left: 2px solid #0580BC;
+  border-top: 2px solid #8F539F;
+  border-right: 2px solid #8F539F;
+  border-left: 2px solid #8F539F;
   border-bottom:0px solid white !important;
 }
 
@@ -545,7 +545,7 @@ html {
 
 .btnlogin {
   color: #fff !important;
-  background: #0580BC;
+  background: #8F539F;
   padding: 20px;
   border-radius: 50px;
   display: inline-block;
@@ -567,7 +567,7 @@ html {
     border-radius: 5px;
     display: inline-block;
     width:150px;
-    border: 1px solid #0580BC;
+    border: 1px solid #8F539F;
     }
     
     .btnsign:hover {

@@ -10,12 +10,17 @@ $land_page = new land_page();
 
 $link= new links();
 $template=$_POST['template'];
-$host= $_SERVER['SERVER_NAME'].'/SMS/vebs/editor.php';
+$host= $_SERVER['SERVER_NAME'].'/SMS/grapjs/index.php';
 $status='progress';
-$camp_id = $cmp->insert($_POST['campname'], $_POST['camptype'], 0,  $status);
-$land_page_id = $land_page->insert('', '', '', '', 0, $_SESSION['user_id']);
-$parameters='campid='.$camp_id."&landid=".$land_page_id;
-$shortlinkid = $link->insert($host, $parameters);
+if($_SESSION['filter']==1)
+    $camp_id = $cmp->insert($_POST['campname'], $_POST['camptype'], '', $_SESSION['user_id'], 0, 0,'', '', '' ,   $status, 1);
+else
+    $camp_id = $cmp->insert($_POST['campname'], $_POST['camptype'], '', $_SESSION['user_id'], 0, 0,'', '','',    $status, 0);
+$land_page_id = $land_page->insert('', '', '', '', 0, $camp_id);
+$parameters='campid='.$camp_id."&landid=".$land_page_id."&camptype=".$_POST['camptype'];
+$shortlinkid = $link->insertName($host, $parameters);
 echo $link->getLinkByID($shortlinkid);
 
 ?>
+
+

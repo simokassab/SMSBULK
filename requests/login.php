@@ -12,7 +12,7 @@ if (isset($_POST['btn-login'])) {
     $reslt = $log->login_($email, $upass);
     //echo $reslt;
     if($reslt=='done'){
-        header("Location: ../index.php");
+        header("Location: ../groups.php");
     }
     elseif($reslt=='badpass'){
         header("Location: ../login.php?action=b");

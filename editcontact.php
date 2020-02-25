@@ -183,7 +183,7 @@ if(!$res)
                         $.notify("Contact has been Updated.", "success");
                         window.setTimeout(function () {
                             location.reload();
-                            location.href = "http://localhost/SMS/contacts.php#view";
+                            location.href = "<?php echo LINK; ?>/contacts.php?grid=4#view";
                         }, 1000);
                     },
                     error: function() 

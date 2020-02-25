@@ -2,18 +2,818 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46f12ce9-2966-495a-bea1-c525f36186b5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/css/grapsjs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.github/no-response.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/assets/upload_image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/css/Backup 1 of grapes.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/css/grapes.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/main-fonts.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/main-fonts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/main-fonts.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/fonts/main-fonts.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/grapes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/grapes.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/dist/grapes.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/Demo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoBasicBlocks.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoCanvasOnly.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoCustomPanels.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoDevices.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoLayers.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoStyle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoTheme.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/DemoTraits.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/demos/DemoCanvasOnly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/demos/DemoCanvasOnly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/demos/DemoCanvasOnly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/demos/DemoLayers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/components/demos/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/enhanceApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/override.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/assets-builtin-modal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/assets-empty-view.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/assets-full-dropzone.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/assets-svg-view.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/assets-uploader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/blocks3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/btn-clicked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/canvas-panels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/cssom-devtools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/cssom-result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/default-gjs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/default-sm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/default-traits.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/demo-view.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/empty-gjs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/enabled-sm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/grapes.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/input-custom-traits.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/logo-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/new-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/new-panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/public/style-comp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/theme/CarbonAds.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/.vuepress/theme/Layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/Backup 1 of getting-started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/Home.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/assets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/block_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/canvas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/commands.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/component.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/components.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/css_composer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/device_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/editor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/keymaps.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/modal_dialog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/panels.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/rich_text_editor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/selector_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/storage_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/style_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/api/undo_manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/faq.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/getting-started.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/guides/Custom-CSS-parser.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/guides/Replace-Rich-Text-Editor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Assets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Blocks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Components-js.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Components.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Plugins.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Storage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Style-manager.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/docs/modules/Traits.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/save.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/model/Asset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/model/AssetImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/model/Assets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/view/AssetImageView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/view/AssetView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/view/AssetsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/asset_manager/view/FileUploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/model/Block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/model/Blocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/model/Categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/model/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/view/BlockView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/view/BlocksView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/block_manager/view/CategoryView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/model/Canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/model/Frame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/view/CanvasView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/canvas/view/FrameView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/model/CodeMirrorEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/model/CssGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/model/HtmlGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/model/JsGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/model/JsonGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/code_manager/view/EditorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/model/Command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/model/Commands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/CanvasClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/CommandAbstract.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentDelete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentEnter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentExit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentNext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentPrev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ComponentStyleClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/CopyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/CreateComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/DeleteComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/Drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ExportTemplate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/Fullscreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ImageComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/InsertCustom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/MoveComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/OpenAssets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/OpenBlocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/OpenLayers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/OpenStyleManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/OpenTraitManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/PasteComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/Preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/Resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/SelectComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/SelectParent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/SelectPosition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/ShowOffset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/SwitchVisibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/commands/view/TextComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/model/CssRule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/model/CssRules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/view/CssGroupRuleView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/view/CssRuleView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/css_composer/view/CssRulesView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/device_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/device_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/device_manager/model/Device.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/device_manager/model/Devices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/device_manager/view/DevicesView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/Component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentLabel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentSvg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTableBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTableFoot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTableHead.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTableRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentTextNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentVideo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ComponentWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/Components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/Toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/model/ToolbarButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentImageView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentLabelView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentLinkView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentMapView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentScriptView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentSvgView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableBodyView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableCellView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableFootView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableHeadView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableRowView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTableView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTextNodeView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentTextView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentVideoView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ComponentsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ToolbarButtonView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/dom_components/view/ToolbarView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/model/Styleable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/model/TypeableCollection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/ui/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/ui/InputColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/ui/InputNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/domain_abstract/view/DomainViews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/editor/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/editor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/editor/model/Editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/editor/view/EditorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/keymaps/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/modal_dialog/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/modal_dialog/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/modal_dialog/model/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/modal_dialog/view/ModalView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/navigator/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/navigator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/navigator/view/ItemView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/navigator/view/ItemsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/model/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/model/Buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/model/Panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/model/Panels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/view/ButtonView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/view/ButtonsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/view/PanelView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/panels/view/PanelsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/parser/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/parser/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/parser/model/BrowserParserCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/parser/model/ParserCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/parser/model/ParserHtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/plugin_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/plugin_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/rich_text_editor/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/rich_text_editor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/rich_text_editor/model/RichTextEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/model/Selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/model/Selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/view/ClassTagView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/selector_manager/view/ClassTagsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/storage_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/storage_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/storage_manager/model/LocalStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/storage_manager/model/RemoteStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Layers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Property.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertyComposite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertyFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertyInteger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertyRadio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertySelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertySlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/PropertyStack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Sector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/model/Sectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/LayerView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/LayersView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertiesView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyColorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyCompositeView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyFileView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyIntegerView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyRadioView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertySelectView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertySliderView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyStackView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/PropertyView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/SectorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/style_manager/view/SectorsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/main-fonts.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/main-fonts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/main-fonts.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/fonts/main-fonts.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/Backup 1 of _gjs_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_assets.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_blocks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_canvas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_devices.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_layers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_panels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_rte.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_selectors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_style_manager.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_traits.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/_gjs_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/styles/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/model/Trait.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/model/TraitFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/model/Traits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitButtonView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitCheckboxView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitColorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitNumberView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitSelectView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/trait_manager/view/TraitsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/undo_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/ColorPicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/Dragger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/Droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/Resizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/Sorter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/extender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/mixins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/src/utils/polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/templates/card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/templates/header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/templates/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/main.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/model/Asset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/model/AssetImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/model/Assets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/view/AssetImageView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/view/AssetView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/view/AssetsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/asset_manager/view/FileUploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/block_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/block_manager/view/BlocksView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/code_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/code_manager/model/CodeModels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/commands/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/commands/model/CommandModels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/commands/view/CommandAbstract.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/css_composer/e2e/CssComposer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/css_composer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/css_composer/model/CssModels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/css_composer/view/CssRuleView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/css_composer/view/CssRulesView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/device_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/device_manager/view/DevicesView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/model/Component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/view/ComponentImageView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/view/ComponentTextView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/view/ComponentV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/dom_components/view/ComponentsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/grapesjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/keymaps/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/modal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/modal/view/ModalView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/e2e/PanelsE2e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/model/PanelModels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/view/ButtonView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/view/ButtonsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/view/PanelView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/panels/view/PanelsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/parser/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/parser/model/ParserCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/parser/model/ParserHtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/plugin_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/selector_manager/e2e/ClassManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/selector_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/selector_manager/model/SelectorModels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/selector_manager/view/ClassTagView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/selector_manager/view/ClassTagsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/storage_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/storage_manager/model/Models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/model/Models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/LayerView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyColorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyCompositeView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyIntegerView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyRadioView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertySelectView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyStackView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/PropertyView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/SectorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/style_manager/view/SectorsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/test_utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/trait_manager/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/trait_manager/model/TraitsModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/trait_manager/view/TraitsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/utils/Sorter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/test/specs/utils/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grapjs/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/homelogo_L54_icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/templates_canvas/template1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/templates_canvas/template2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/templates_canvas/template3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/templates_canvas/template4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/trailer.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/video.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SMS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01pharSimple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simple-download-ods.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simple-download-pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simple-download-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simple-download-xlsx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/01simplePCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/02types-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/02types.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/03formulas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/04printing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/05featuredemo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/05featuredemo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/06largescale-with-cellcaching-sqlite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/06largescale-with-cellcaching-sqlite3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/06largescale-with-cellcaching.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/06largescale-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/06largescale.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/07reader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/07readerPCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/08conditionalformatting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/08conditionalformatting2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/09pagebreaks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/10autofilter-selection-1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/10autofilter-selection-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/10autofilter-selection-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/10autofilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/11documentsecurity-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/11documentsecurity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/12cellProtection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/13calculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/13calculationCyclicFormulae.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/14excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/15datavalidation-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/15datavalidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/16csv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/17html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/18extendedcalculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/19namedrange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/20readexcel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/21pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/22heavilyformatted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/23sharedstyles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/24readfilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/25inmemoryimage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/26utf8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/27imagesexcel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/28iterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/29advancedvaluebinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/30template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/31docproperties_write-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/31docproperties_write.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/32chartreadwrite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-area.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-bar-stacked.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-bar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-column-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-composite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-multiple-charts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-pie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-radar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-scatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/33chartcreate-stock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/34chartupdate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/35chartrender.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/36chartreadwriteHTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/36chartreadwritePDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/37page_layout_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/38cloneWorksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/39dropdown.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/40duplicateStyle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/41password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/42richText.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/43mergeWorkbooks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/44worksheetInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/Excel2003XMLReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/Excel2003XMLTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/GnumericReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/GnumericTest.gnumeric" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/OOCalcReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/OOCalcReaderPCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/OOCalcTest.ods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/Quadratic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/Quadratic2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/SylkReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/SylkTest.slk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/XMLReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/XMLTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/runall.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPExcel-1.8/Examples/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c/HeJT.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c/jzvc.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/campaigns.php" beforeDir="false" afterPath="$PROJECT_DIR$/campaigns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/campaigns.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/campaigns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/groups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/land_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/land_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/links.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/templates.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/templates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smart_wizard_theme_circles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/smart_wizard_theme_circles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editcontact.php" beforeDir="false" afterPath="$PROJECT_DIR$/editcontact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/groups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns.html" beforeDir="false" afterPath="$PROJECT_DIR$/img/Campaigns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/bootstrap-filestyle.min.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/bootstrap-multiselect.min.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/img/Campaigns_files/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/bootstrap.min.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/img/Campaigns_files/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/img/Campaigns_files/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Campaigns_files/smart_wizard_theme_circles.css" beforeDir="false" afterPath="$PROJECT_DIR$/img/Campaigns_files/smart_wizard_theme_circles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/templates_canvas/flexbox.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing_page/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing_page/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/reports.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requests/campaigns/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/campaigns/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/campaigns/add_advanced.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/campaigns/add_advanced.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/contacts/addcontact.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/contacts/addcontact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/contacts/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/contacts/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/groups/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/groups/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/38539017_1886579491380730_6424722422808707072_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/38855444_1894488123923200_3402212688024043520_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/fifa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/genesis oud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/kinda-hanna3-4-2018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/mario.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/officelogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/4G.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/VvvebJs-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/css/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/css/editor.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/css/line-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/css/line-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/album/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/album/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/blank/blank.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/blank/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/blog/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/img/balloon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/img/coast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/img/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/img/island.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/assets/img/mountain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/business/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/carousel/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/carousel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/narrow/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/narrow/narrow-jumbotron.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/offcanvas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/offcanvas/offcanvas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/offcanvas/offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/pricing/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/pricing/pricing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/product/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/demo/product/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/editor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/line-awesome.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/line-awesome.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/line-awesome.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/line-awesome.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/fonts/line-awesome.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/js/jquery.hotkeys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/components-bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/components-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/components-widgets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/2checkbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/badge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/breadcrumbs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/button_group.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/button_toolbar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/categories.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/checkbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/checkout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/chevron-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/chevron-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/components/cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/components/checkbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/components/contact-form.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/components/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/container.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/filters.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/form.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/grid_row.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/heading.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/hr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/jumbotron.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/label.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/list_group.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/maps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/minus_round.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/navbar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/pagination.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/paypal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/play-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/plus_round.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/product.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/product_gallery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/products.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/progressbar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/radio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/ratio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/rectangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/select_input.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/slider.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/text_area.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/text_input.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/video.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/icons/well.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/inputs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/plugin-codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/builder/undo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/codemirror/lib/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/codemirror/lib/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/codemirror/lib/formatting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/codemirror/lib/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/libs/codemirror/theme/material.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/myText.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_builder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_csstree.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_line-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/editor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/ionicons/_ionicons-font.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/ionicons/_ionicons-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/ionicons/_ionicons-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/ionicons/ionicons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/38539017_1886579491380730_6424722422808707072_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/38855444_1894488123923200_3402212688024043520_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/4G.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/IMG_2703.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/coast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/homelogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/island.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads/mountain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vebs/uploads4G.jpg" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +821,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/PHPExcel-1.8/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,235 +839,68 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="campaigns.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/campaigns.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1955">
-              <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="links.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/links.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_advanced.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests/campaigns/add_advanced.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="54" selection-start-line="12" selection-end-line="12" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/landing_page/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="builder.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vebs/libs/builder/builder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="1186" column="34" selection-start-line="1186" selection-start-column="34" selection-end-line="1186" selection-end-column="34" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="land_page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/land_page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="campaigns.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/campaigns.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="28" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>nav-item</find>
-      <find>nav-tabs</find>
-      <find>sw-theme-circles</find>
-      <find>sw-main sw-theme-circles</find>
-      <find>font</find>
-      <find>start new</find>
-      <find>datetim</find>
-      <find>campdate</find>
-      <find>datecamp</find>
-      <find>edit</find>
-      <find>hidden</find>
-      <find>point</find>
-      <find>&lt;a</find>
-      <find>target</find>
-      <find>init</find>
-      <find>seth</find>
-      <find>html</find>
-      <find>gethtml</find>
-      <find>html/image</find>
-      <find>var Input = {</find>
-      <find>alert</find>
-      <find>setVal</find>
-      <find>setva</find>
-      <find>socialplugin</find>
-      <find>mobile-view</find>
-      <find>viewpo</find>
-      <find>mobile</find>
-      <find>html/im</find>
-      <find>upload</find>
-      <find>save</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/groups.php" />
-        <option value="$PROJECT_DIR$/css/smart_wizard_theme_circles.css" />
-        <option value="$PROJECT_DIR$/js/maxlength.js" />
-        <option value="$PROJECT_DIR$/js/test.php" />
-        <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/classes/contacts.php" />
-        <option value="$PROJECT_DIR$/classes/queue.php" />
-        <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/vebs/demo/blank/index.html" />
-        <option value="$PROJECT_DIR$/vebs/libs/builder/components-widgets.js" />
-        <option value="$PROJECT_DIR$/requests/campaigns/add.php" />
-        <option value="$PROJECT_DIR$/classes/campaigns.php" />
-        <option value="$PROJECT_DIR$/campaigns.php" />
-        <option value="$PROJECT_DIR$/vebs/css/editor.css" />
-        <option value="$PROJECT_DIR$/vebs/libs/builder/components-bootstrap4.js" />
-        <option value="$PROJECT_DIR$/vebs/libs/builder/inputs.js" />
-        <option value="$PROJECT_DIR$/vebs/upload.php" />
-        <option value="$PROJECT_DIR$/vebs/editor.php" />
-        <option value="$PROJECT_DIR$/vebs/libs/builder/builder.js" />
-        <option value="$PROJECT_DIR$/classes/land_page.php" />
-        <option value="$PROJECT_DIR$/classes/links.php" />
-        <option value="$PROJECT_DIR$/requests/campaigns/add_advanced.php" />
-        <option value="$PROJECT_DIR$/landing_page/index.php" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/vebs/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6">
     <include_path>
       <path value="$PROJECT_DIR$/../../php/PEAR" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
+  <component name="ProjectId" id="1X6hzjvWzuFuv1vstdMn2vUyN5H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMS" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMS" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-              <item name="campaigns" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecollectionz" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\SMS\vebs\libs\builder\icons" />
+      <recent name="D:\xampp\htdocs\SMS" />
+      <recent name="D:\xampp\htdocs\SMS\CMS\app\Http\Controllers" />
+      <recent name="D:\xampp\htdocs\SMS\CMS\resources\views" />
+      <recent name="D:\xampp\htdocs\SMS\js" />
+      <recent name="D:\xampp\htdocs\SMS\requests" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="groups.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SMS/groups.php" />
+    <configuration name="groups.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SMS/groups.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.groups.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -283,6 +919,115 @@
       <workItem from="1541575678325" duration="12318000" />
       <workItem from="1541661798856" duration="17361000" />
       <workItem from="1541748152201" duration="14859000" />
+      <workItem from="1542023330965" duration="3441000" />
+      <workItem from="1542093879320" duration="8807000" />
+      <workItem from="1542180245746" duration="14758000" />
+      <workItem from="1542267461664" duration="16276000" />
+      <workItem from="1542353011910" duration="56000" />
+      <workItem from="1542358430364" duration="303000" />
+      <workItem from="1542358758915" duration="676000" />
+      <workItem from="1542361213411" duration="5731000" />
+      <workItem from="1542613513540" duration="10874000" />
+      <workItem from="1542793072866" duration="134000" />
+      <workItem from="1543404066829" duration="2634000" />
+      <workItem from="1543487770196" duration="8311000" />
+      <workItem from="1543562175683" duration="17888000" />
+      <workItem from="1543821932825" duration="12797000" />
+      <workItem from="1543837225695" duration="2556000" />
+      <workItem from="1543843054386" duration="2110000" />
+      <workItem from="1551947214254" duration="2552000" />
+      <workItem from="1551957903231" duration="1600000" />
+      <workItem from="1552031417956" duration="1197000" />
+      <workItem from="1552051972375" duration="19000" />
+      <workItem from="1552308179050" duration="713000" />
+      <workItem from="1552374916237" duration="603000" />
+      <workItem from="1552462484101" duration="2144000" />
+      <workItem from="1557817723872" duration="7030000" />
+      <workItem from="1557952948034" duration="469000" />
+      <workItem from="1558081259841" duration="2348000" />
+      <workItem from="1558179984310" duration="590000" />
+      <workItem from="1558211137294" duration="37000" />
+      <workItem from="1558433565152" duration="3442000" />
+      <workItem from="1558509542717" duration="1191000" />
+      <workItem from="1558516432864" duration="9574000" />
+      <workItem from="1558596597782" duration="3055000" />
+      <workItem from="1558646901279" duration="597000" />
+      <workItem from="1562666691930" duration="2900000" />
+      <workItem from="1562742049429" duration="6161000" />
+      <workItem from="1562824534588" duration="5884000" />
+      <workItem from="1562838308057" duration="5820000" />
+      <workItem from="1563437682039" duration="2118000" />
+      <workItem from="1563874221258" duration="46000" />
+      <workItem from="1563957170236" duration="607000" />
+      <workItem from="1564384217244" duration="4353000" />
+      <workItem from="1564555719764" duration="4564000" />
+      <workItem from="1564648204902" duration="2193000" />
+      <workItem from="1564730770233" duration="3830000" />
+      <workItem from="1565032932244" duration="953000" />
+      <workItem from="1565033928428" duration="676000" />
+      <workItem from="1566210193721" duration="1203000" />
+      <workItem from="1566286908083" duration="597000" />
+      <workItem from="1566371310974" duration="3552000" />
+      <workItem from="1566544728813" duration="11409000" />
+      <workItem from="1566803472495" duration="9241000" />
+      <workItem from="1566889658045" duration="1796000" />
+      <workItem from="1567078190747" duration="1289000" />
+      <workItem from="1569225817648" duration="830000" />
+      <workItem from="1569320620876" duration="82000" />
+      <workItem from="1570689724679" duration="7622000" />
+      <workItem from="1571121361195" duration="1208000" />
+      <workItem from="1574669957856" duration="3780000" />
+      <workItem from="1574843122126" duration="3388000" />
+      <workItem from="1575533531680" duration="1352000" />
+      <workItem from="1575890989819" duration="908000" />
+      <workItem from="1575895963785" duration="1493000" />
+      <workItem from="1575966577809" duration="10466000" />
+      <workItem from="1576054814009" duration="4486000" />
+      <workItem from="1576147424675" duration="3750000" />
+      <workItem from="1576490191760" duration="3565000" />
+      <workItem from="1576572581950" duration="2956000" />
+      <workItem from="1576664912771" duration="1264000" />
+      <workItem from="1576749089418" duration="592000" />
+      <workItem from="1577094839151" duration="4034000" />
+      <workItem from="1577347336263" duration="11412000" />
+      <workItem from="1577693312878" duration="638000" />
+      <workItem from="1577953320211" duration="5570000" />
+      <workItem from="1578383679131" duration="15448000" />
+      <workItem from="1578469443529" duration="4845000" />
+      <workItem from="1578489438597" duration="4187000" />
+      <workItem from="1578555716008" duration="1182000" />
+      <workItem from="1579076209551" duration="14022000" />
+      <workItem from="1579090689116" duration="4664000" />
+      <workItem from="1579160210962" duration="626000" />
+      <workItem from="1579161739645" duration="9376000" />
+      <workItem from="1579246597745" duration="2179000" />
+      <workItem from="1579293856536" duration="55000" />
+      <workItem from="1579510124092" duration="10999000" />
+      <workItem from="1579594187575" duration="7065000" />
+      <workItem from="1579614205562" duration="2277000" />
+      <workItem from="1579767578950" duration="10580000" />
+      <workItem from="1579859142409" duration="608000" />
+      <workItem from="1580201324963" duration="3615000" />
+      <workItem from="1580287129494" duration="1334000" />
+      <workItem from="1580370914270" duration="1370000" />
+      <workItem from="1580372724184" duration="323000" />
+      <workItem from="1580373088417" duration="205000" />
+      <workItem from="1580373322005" duration="148000" />
+      <workItem from="1580373489076" duration="329000" />
+      <workItem from="1580373840920" duration="785000" />
+      <workItem from="1580374641823" duration="11917000" />
+      <workItem from="1580463372754" duration="825000" />
+      <workItem from="1580719809869" duration="403000" />
+      <workItem from="1580720492522" duration="2460000" />
+      <workItem from="1580801845679" duration="2113000" />
+      <workItem from="1580905948753" duration="4287000" />
+      <workItem from="1580976357342" duration="3346000" />
+      <workItem from="1581066516807" duration="3867000" />
+      <workItem from="1582012288439" duration="655000" />
+      <workItem from="1582013717462" duration="124000" />
+      <workItem from="1582099565798" duration="7213000" />
+      <workItem from="1582528820869" duration="12091000" />
+      <workItem from="1582616392226" duration="3688000" />
     </task>
     <task id="LOCAL-00001" summary="update campaigns">
       <created>1541423189662</created>
@@ -294,368 +1039,42 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83461000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14635417" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update campaigns" />
     <option name="LAST_COMMIT_MESSAGE" value="update campaigns" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" column="28" selection-start-line="189" selection-start-column="28" selection-end-line="216" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7531">
-          <caret line="443" column="1" lean-forward="true" selection-start-line="443" selection-start-column="1" selection-end-line="443" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4947">
-          <caret line="291" column="15" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/smart_wizard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/smart_wizard_theme_circles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/maxlength.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="189" column="28" selection-start-line="189" selection-start-column="28" selection-end-line="216" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.php" />
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editcontact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3128">
-          <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="130" column="4" lean-forward="true" selection-start-line="130" selection-start-column="4" selection-end-line="147" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/contacts/addcontact.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/groups/upload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/groups/updategroup.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/contacts/update.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/groups/addgroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7820">
-          <caret line="460" column="18" selection-start-line="460" selection-start-column="18" selection-end-line="460" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/icons/ratio.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/icons/rectangle.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3774">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/demo/blank/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../vebs1/libs/builder/components-widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="347" selection-start-line="347" selection-end-line="394" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8857">
-          <caret line="537" column="54" selection-start-line="537" selection-start-column="54" selection-end-line="537" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/campaigns/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/js/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/plugin-codemirror.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/css/editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="11690" column="15" selection-start-line="11690" selection-start-column="15" selection-end-line="11690" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/components-bootstrap4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="927" column="4" selection-start-line="927" selection-start-column="4" selection-end-line="927" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#186#193#1" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/inputs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="276" column="76" selection-start-line="276" selection-start-column="76" selection-end-line="276" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/editor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/landing_page.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vebs/libs/builder/builder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="1186" column="34" selection-start-line="1186" selection-start-column="34" selection-end-line="1186" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/land_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1955">
-          <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/links.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests/campaigns/add_advanced.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" selection-start-line="12" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c/FyPN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="53" lean-forward="true" selection-start-column="53" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c/gEfQ.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c/gzsq.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/landing_page/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="667" y="116" key="#PHP" timestamp="1580379242151">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="667" y="116" key="#PHP/0.0.1920.1050@0.0.1920.1050" timestamp="1580379242151" />
+    <state x="640" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580720507335">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580720507335" />
+    <state x="740" y="267" key="FileChooserDialogImpl" timestamp="1581068213914">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="267" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1580463598310" />
+    <state x="740" y="267" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1581068213914" />
+    <state x="609" y="153" key="SettingsEditor" timestamp="1580374693876">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="609" y="153" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1580374693876" />
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1580372726846">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580372726846" />
+    <state x="567" y="130" width="737" height="804" key="find.popup" timestamp="1582618321046">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="567" y="130" width="737" height="804" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582618321046" />
+    <state x="794" y="357" width="707" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1580373629064">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="357" width="707" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580373629064" />
   </component>
 </project>

@@ -59,8 +59,8 @@
     z-index: 98;
 }
 .sw-theme-circles > ul.step-anchor > li > a{
-    border: 2px solid #0580BC;
-    background: #0580BC;
+    border: 2px solid #8F539F;
+    background: #8F539F;
     width: 75px;
     height: 75px;
     color:white !important;
@@ -72,11 +72,11 @@
     outline-style:none;
     z-index: 99;
     //font-weight: ;
-    background: #0580BC;
+    background: #8F539F;
     line-height: 1;
 }
 .sw-theme-circles > ul.step-anchor > li > a:hover  {
-    color: #0580BC !important;
+    color: #8F539F !important;
     background: #fff !important;
     border-width: 2px;
 }
@@ -86,12 +86,12 @@
     color: #ccc;
 }
 .sw-theme-circles > ul.step-anchor > li.clickable > a:hover {
-    color: #0580BC;
+    color: #8F539F;
 }
 .sw-theme-circles > ul.step-anchor > li.active > a {
     border-color: #5CB85C;
     color: #fff;
-    background: #0580BC;
+    background: #8F539F;
 }
 .sw-theme-circles > ul.step-anchor > li.active > a > small{
     color: #5bc0de;

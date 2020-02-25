@@ -71,7 +71,7 @@ $(document).ready(function (e) {
                 $.notify("New Group has been Added.", "success");
                  window.setTimeout(function () {
                     location.reload();
-                      location.href = "http://localhost/SMS/groups.php#view";
+                      location.href = "<?php echo LINK; ?>/groups.php#view";
                    }, 1000);
                 },
                 error: function() 
@@ -140,6 +140,8 @@ $(document).ready(function (e) {
                         <!-- Form Delete Post -->
             <div class="deleteContent">
                 Are You sure want to delete <span class="title"></span>?
+                <br>
+                Contacts in this group will be removed !
                 <span class="hidden id"></span>
                 </div>
             </div>
@@ -276,6 +278,8 @@ $(document).ready(function (e) {
                                         onchange="ValidateSingleInput(this)">
                                     </div>          
                                 </div>
+                                <a href="contacts.xlsx"><img src="img/contacts.PNG" title="Sample Template here" style="border: 2px solid #5CB85C; border-radius: 5px;"  ></a>
+                                <hr>
                             </div>
                         </div>
                     </div>               
@@ -325,7 +329,7 @@ $( document ).ready(function() {
                 $('#result').html("<center><h3>Loading...</h3></center>");
                 $.notify("Uploading..", "info");
                 window.setTimeout(function () {
-                        //location.reload();
+                       // location.reload();
                         $('#result').html(data);
                         }, 2000);
             }

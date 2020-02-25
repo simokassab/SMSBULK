@@ -27,7 +27,7 @@ header('Content-type:text/html; charset=utf-8');
             if (mysqli_query($mysqli, $sql)) {
                 return true;
             } else {
-                return "Error updating record: " . mysqli_error($conn);
+                return "Error updating record: " . mysqli_error($mysqli);
             }
         }
 
@@ -43,6 +43,7 @@ header('Content-type:text/html; charset=utf-8');
         
 
         function getRowByID($id){
+            $mysqli = getConnected();
             $query = "SELECT * FROM groups WHERE id = ".$id." and active=1";
             $result = mysqli_query($mysqli, $query);
             $row   = mysqli_fetch_row($result);
@@ -50,6 +51,7 @@ header('Content-type:text/html; charset=utf-8');
         }
 
         function getRowByUserID($user_id){
+            $mysqli = getConnected();
             $query = "SELECT * FROM groups WHERE US_ID_FK = ".$user_id." and active=1";
             $result = mysqli_query($mysqli, $query);
             $row   = mysqli_fetch_row($result);

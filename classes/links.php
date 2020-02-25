@@ -39,12 +39,13 @@ class links
         check:
         $perm=$this->generateRandomString(4);
         $mysqli = getConnected();
-        $query="select id from links where shortlink='".$perm."' ";
-        $result = mysqli_query($mysqli, $query);
+        $query1="select id from links where shortlink='".$perm."' ";
+        $result = mysqli_query($mysqli, $query1);
+        //echo $query1;
         $row   = mysqli_fetch_row($result);
         if(!$row[0]){
             $query = "INSERT INTO links VALUES (NULL, '$perm', '$host', '$parameters',  NOW(), 1)";
-            //echo $query;
+         //   echo $query;
             $mysqli->query($query);
             return $mysqli->insert_id;
         }
@@ -69,5 +70,15 @@ class links
         $row   = mysqli_fetch_row($result);
         return $row[0];
     }
+    function getLinkByCampID($camp_id)
+    {
+        $mysqli = getConnected();
+        $sql = "SELECT shortlink from links where parameters LIKE '%$camp_id%' and active=1";
+        // echo $sql;
+        $result = mysqli_query($mysqli, $sql);
+        $row   = mysqli_fetch_row($result);
+        return $row[0];
+    }
+
 }
 ?>

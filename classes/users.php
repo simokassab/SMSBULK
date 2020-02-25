@@ -3,16 +3,26 @@ include_once ('db_connect.php');
 
     class users {
 
-        function insert($username, $email, $password, $address, $phone, $company, $photo){
+        function insert($full_name, $username, $email, $password, $address, $phone, $company, $photo){
             $mysqli = getConnected();
-            $query = "INSERT INTO `users` (`id`, `username`, `email`, `password`, `address`, `phone`, `company`, `photo`, `active`, `created_at`) 
-            VALUES (NULL, '$username', '$email', '$password', '$address', '$phone', '$company', '$photo', '1', NOW());";
+            $query = "INSERT INTO `users` (`id`, `full_name`, `username`, `email`, `password`, `address`, `phone`, `company`, `photo`, `active`, `created_at`) 
+            VALUES (NULL, '$full_name', '$username', '$email', '$password', '$address', '$phone', '$company', '$photo', '0', NOW());";
+            //echo $query;
+            $mysqli->query($query);
+            return $mysqli->insert_id;
+        }
+
+        function insert_status($user, $status, $notes){
+            $mysqli = getConnected();
+            $query = "INSERT INTO `users_status` (`id`, `US_ID`, `status`, `notes`) 
+            VALUES (NULL, '$user', '$status', '$notes');";
             //echo $query;
             $mysqli->query($query);
             return $mysqli->insert_id;
         }
 
         function delete($id){
+            $mysqli = getConnected();
             $stmt = $mysqli->prepare("DELETE FROM users WHERE id = ?");
             $stmt->bind_param('i', $id);
             $stmt->execute(); 
@@ -26,7 +36,7 @@ include_once ('db_connect.php');
             if (mysqli_query($mysqli, $sql)) {
                 return true;
             } else {
-                return "Error updating record: " . mysqli_error($conn);
+                return "Error updating record: " . mysqli_error($mysqli);
             }
         }
 
@@ -45,11 +55,12 @@ include_once ('db_connect.php');
             if (mysqli_query($mysqli, $sql)) {
                 return true;
             } else {
-                return "Error updating record: " . mysqli_error($conn);
+                return "Error updating record: " . mysqli_error($mysqli);
             }
         }
 
         function getAll(){
+            $mysqli = getConnected();
             $sql = "Select * FROM `users` where active=1";
             $Rslt = mysqli_query($mysqli,$sql);
 
@@ -69,11 +80,12 @@ include_once ('db_connect.php');
         }
 
         function deactivate ($id){
+            $mysqli=getConnected();
             $sql = "UPDATE `users` SET `active` = 0 WHERE `users`.`id` = ".$id;
             if (mysqli_query($mysqli, $sql)) {
                 return true;
             } else {
-                return "Error updating record: " . mysqli_error($conn);
+                return "Error updating record: " . mysqli_error($mysqli);
             }
         }
 
@@ -108,8 +120,37 @@ include_once ('db_connect.php');
                 if (mysqli_query($mysqli, $sql)) {
                     return true;
                 } else {
-                    return "Error creating table: " . mysqli_error($conn);
+                    return "Error creating table: " . mysqli_error($mysqli);
                 }
+        }
+
+        function checkUsername($username){
+            $mysqli = getConnected();
+            $stmt = $mysqli->prepare('SELECT id, password FROM users WHERE username = ?');
+            // Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
+            $stmt->bind_param('s', $username);
+            $stmt->execute();
+            $stmt->store_result();
+            if ($stmt->num_rows > 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function checkPhone($phone){
+            $mysqli = getConnected();
+            $stmt = $mysqli->prepare('SELECT id, password FROM users WHERE phone = ?');
+            // Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
+            $stmt->bind_param('s', $phone);
+            $stmt->execute();
+            $stmt->store_result();
+            if ($stmt->num_rows > 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
         
     }
